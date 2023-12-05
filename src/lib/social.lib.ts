@@ -1,4 +1,11 @@
-import { Instagram, Linkedin, LucideIcon } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  LucideIcon,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 
 type SocialData = {
   name: string;
@@ -18,4 +25,28 @@ const linkedinData: SocialData = {
   icon: Linkedin,
 };
 
-export const socialData: SocialData[] = [instagramData, linkedinData];
+const facebookData: SocialData = {
+  name: "Facebook",
+  link: "https://www.facebook.com/hultprizeepn/",
+  icon: Facebook,
+};
+
+const twitterData: SocialData = {
+  name: "Twitter",
+  link: "https://twitter.com/hultprizeepn",
+  icon: Twitter,
+};
+
+const youtubeData: SocialData = {
+    name: "Youtube",
+    link: "https://www.youtube.com/channel/UCZQ2phf8d-YkPcp4Iv9PxkA",
+    icon: Youtube,
+}
+
+export const socialData: SocialData[] = [
+  instagramData,
+  linkedinData,
+  twitterData,
+  facebookData,
+  youtubeData,
+];
