@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { navItems } from "@/lib/nav.lib";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -21,38 +22,17 @@ export function MainNav() {
         />
       </Link>
       <nav className="flex items-center space-x-6 text-md font-medium">
-        <Link
-          href="/sobre-nosotros"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "/" ? "text-foreground" : "text-foreground/60"
-          )}
-        >
-          Sobre Nosotros
-        </Link>
-        <Link
-          href="/como-particpar"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "/" ? "text-foreground" : "text-foreground/60"
-          )}
-        >
-          Cómo participar
-        </Link>
-        <Link
-          href="/casos-de-exito"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "/" ? "text-foreground" : "text-foreground/60"
-          )}
-        >
-          Casos de éxito
-        </Link>
-        <Link href={"/aplica"}>
-            <Button className="bg-[#E5077F] h-0 py-5 rounded-xl text-lg">
-                Aplica
-            </Button>
-        </Link>
+        {navItems.map((item) => (
+          <Link
+            key={`mobile-item-${item.name}`} href={item.link}
+            className={cn(
+              "transition-colors hover:text-[#E5077F]/80",
+              pathname === item.link ? "text-[#E5077F]" : "text-slate-950"
+            )}
+          >
+            {item.name}
+          </Link>
+        ))}
       </nav>
     </div>
   );
