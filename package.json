@@ -17,6 +17,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@react-three/drei": "^9.91.0",
     "@react-three/fiber": "^8.15.12",
+    "@react-three/postprocessing": "^2.15.11",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "gsap": "^3.12.3",
@@ -24,6 +25,7 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.12.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.159.0"
