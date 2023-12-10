@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     name: "Cómo participar",
-    link: "/como-participar",
+    link: "/roadmap",
   },
   {
     name: "Casos de éxito",
