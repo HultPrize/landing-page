@@ -1,10 +1,10 @@
-import Hero from '@/components/home/Hero'
-import Image from 'next/image'
-import { Header, Footer } from "@/components/layout/"
+import { Hero, Sponsors } from "@/components/home";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-        <Hero />
+      <Hero />
+      <Sponsors />
     </main>
-  )
+  );
 }

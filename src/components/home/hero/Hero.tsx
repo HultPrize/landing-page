@@ -9,14 +9,14 @@ export default function Hero() {
     >
       <header className="flex w-full justify-between pt-24 md:pt-32">
         <Image
-          src={"/logos/hp-white.png"}
+          src={"/logos/hult-prize/vertical/white.png"}
           height={100}
           width={100}
           alt={"Logo Hult Prize"}
           className="hidden md:block h-24"
         />
         <Image
-          src={"/logos/epn.png"}
+          src={"/logos/epn/white.png"}
           height={100}
           width={200}
           alt={"Logo Escuela Politécnica Nacional"}
