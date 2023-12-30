@@ -9,6 +9,6 @@ export const navItems = [
   },
   {
     name: "Casos de éxito",
-    link: "/casos-exitos",
+    link: "/winners",
   },
 ];
