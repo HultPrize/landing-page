@@ -37,7 +37,7 @@ export default function InterestForm() {
     console.log("Formulario enviado:", formData);
 
     try {
-      const response = await fetch(`${config.API_URL}/forms/interest`, {
+      const response = await fetch(`${config.API_URL}/forms/interested`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
