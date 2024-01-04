@@ -1,257 +1,293 @@
-// "use client";
-// import React, { useState, FormEvent } from "react";
-
-// interface TeamMember {
-//   name: string;
-//   email: string;
-//   phoneNumber: string;
-//   faculty: string;
-//   isLeader: boolean;
-//   university: string;
-//   studyArea: string;
-// }
-
-// export default function Teams() {
-//   const [teamName, setTeamName] = useState("");
-//   const [description, setDescription] = useState("");
-//   const [numMembers, setNumMembers] = useState("");
-//   const [hasExternalMember, setHasExternalMember] = useState(false);
-  
-
-//   // State for team members
-//   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
-
-//   const handleExternalMemberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-//     const isChecked = e.target.checked;
-//     setHasExternalMember(isChecked);
-
-//     // Reset numMembers if external member is selected
-//     if (isChecked) {
-//       setNumMembers("2"); // Set minimum of 3 total members initially
-//     }
-//   };
-
-//   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-//     e.preventDefault();
-//     console.log("Team Name:", teamName);
-//     console.log("Description:", description);
-//     console.log("Number of Members:", numMembers);
-//     console.log("Has External Member:", hasExternalMember);
-//     console.log("Team Members:", teamMembers);
-  
-//     // Handle form submission - send data to the server
-//     // ...
-  
-//     // Reset form fields after submission if needed
-//     // resetForm();
-//   };
-
-//   const addMemberField = () => {
-//     const totalMembers = hasExternalMember ? teamMembers.length + 1 : teamMembers.length;
-    
-//     if (totalMembers < 5) {
-//       const newMember: TeamMember = {
-//         name: "",
-//         email: "",
-//         phoneNumber: "",
-//         faculty: "",
-//         isLeader: false,
-//         university: "",
-//         studyArea: "",
-//       };
-
-//       setTeamMembers([...teamMembers, newMember]);
-//     }
-//   };
-
-//   const handleMemberChange = (
-//     e: React.ChangeEvent<HTMLInputElement>,
-//     index: number,
-//     fieldName: string
-//   ) => {
-//     const newTeamMembers = [...teamMembers];
-//     newTeamMembers[index] = {
-//       ...newTeamMembers[index],
-//       [fieldName]: e.target.value,
-//     };
-//     setTeamMembers(newTeamMembers);
-//   };
-
-//   const handleNumMembersChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-//     const newNumMembers = parseInt(e.target.value);
-//     const maxMembers = hasExternalMember ? 4 : 5;
-
-//     if (
-//       !isNaN(newNumMembers) &&
-//       newNumMembers >= 2 &&
-//       newNumMembers <= maxMembers
-//     ) {
-//       setNumMembers(e.target.value);
-//     }
-//   };
-
-//   return (
-//     <main className="min-h-screen flex flex-col items-center justify-center">
-//       <h1 className="text-3xl font-bold mb-6">Team Registration</h1>
-//       <form onSubmit={handleSubmit} className="w-96">
-//         <label htmlFor="hasExternalMember" className="block mb-2">
-//           Are there any external members?
-//         </label>
-//         <input
-//           type="checkbox"
-//           id="hasExternalMember"
-//           checked={hasExternalMember}
-//           onChange={handleExternalMemberChange}
-//         />
-
-//         {hasExternalMember && (
-//           <>
-//             <label htmlFor="numMembers" className="block mt-4 mb-2">
-//               Number of Team Members (excluding external member):
-//             </label>
-//             <input
-//               type="number"
-//               id="numMembers"
-//               value={numMembers}
-//               min="3"
-//               max="4"
-//               onChange={handleNumMembersChange}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </>
-//         )}
-
-//         {!hasExternalMember && (
-//           <>
-//             <label htmlFor="numMembers" className="block mt-4 mb-2">
-//               Number of Team Members:
-//             </label>
-//             <input
-//               type="number"
-//               id="numMembers"
-//               value={numMembers}
-//               min="3"
-//               max="5"
-//               onChange={handleNumMembersChange}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </>
-//         )}
-
-//         {numMembers &&
-//           parseInt(numMembers) > 0 &&
-//           [...Array(parseInt(numMembers))].map((_, index) => (
-//             <div key={index}>
-//               <h2>Member {index + 1}</h2>
-//               {/* Common fields for all members */}
-//               <label htmlFor={`name-${index}`} className="block mt-4 mb-2">
-//                 Name:
-//               </label>
-//               <input
-//                 type="text"
-//                 id={`name-${index}`}
-//                 value={teamMembers[index]?.name || ""}
-//                 onChange={(e) => handleMemberChange(e, index, "name")}
-//                 className="w-full p-2 border border-gray-300 rounded"
-//                 required
-//               />
-//               {/* Add additional fields for email, phone number, etc. for each member */}
-//               {/* ... (similar pattern for other member fields) ... */}
-//             </div>
-//           ))}
-
-
-//         {hasExternalMember && (
-//           <div>
-//             <label htmlFor="externalMemberName" className="block mt-4 mb-2">
-//               External Member Name:
-//             </label>
-//             <input
-//               type="text"
-//               id="externalMemberName"
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//             {/* Add additional fields for the external member if needed */}
-//           </div>
-//         )}
-//         <p></p>
-//         <button
-//           type="button"
-//           onClick={addMemberField}
-//           disabled={
-//             (hasExternalMember ? teamMembers.length + 1 : teamMembers.length) >= 5
-//           }
-//           className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-//         >
-//           Add Member
-//         </button>
-//       </form>
-//     </main>
-//   );
-// }
 "use client";
 import React, { useState } from "react";
-
 import { config } from "@/config";
 
-export default function Teams() {
-  const [teamName, setTeamName] = useState("");
-  const [numMembers, setNumMembers] = useState("");
+interface MessageBoxProps {
+  message: string;
+  type: 'success' | 'error';
+}
 
+const MessageBox: React.FC<MessageBoxProps> = ({ message, type }) => {
+  if (!message) {
+    return null;
+  }
+
+  return (
+    <div className={`message-box ${type}`}>
+      <p>{message}</p>
+    </div>
+  );
+};
+
+export default function InterestForm() {
+  const [first_name, setFirstName] = useState("");
+  const [last_name, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [faculty, setFaculty] = useState("");
+  const [academic_level, setAcademicLevel] = useState<number | string>("");
+  const [is_leader, setIsLeader] = useState(true);
+  const [team_name, setTeam] = useState("");
+  const [is_external, setIsExternal] = useState(false);
+  const [university, setUniversity] = useState("EPN");
+  const [sdg, setSelectedSdg] = useState("");
+
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+
+
+  // Función para manejar el envío del formulario
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("teamName:", teamName);
+
+    // Crear un objeto con los datos del formulario
+    const formData = {
+      first_name,
+      last_name,
+      email,
+      phone,
+      faculty,
+      academic_level,
+      is_leader,
+      team_name,
+      is_external,
+      university,
+      sdg,
+    };
+
+    console.log("Formulario enviado:", formData);
 
     try {
-      const response = await fetch(`${config.API_URL}/forms/teams`, {
+      const firstResponse = await fetch(`${config.API_URL}/forms/teams`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name: teamName, members: numMembers }),
+        body: JSON.stringify(formData),
       });
+      if (firstResponse.ok) {
+        // Process the first response data if needed
 
-      if (response.ok) {
-        console.log("Equipo registrado exitosamente.");
+        // Second POST request
+        const secondResponse = await fetch(`${config.API_URL}/forms/leader`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        if (secondResponse.ok) {
+          setSuccessMessage('Form submitted successfully!');
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setPhone("");
+          setFaculty("");
+          setAcademicLevel("");
+          setTeam("");
+          setSelectedSdg("");
+          setTimeout(() => {
+            setSuccessMessage('');
+          }, 2000);
+          console.log("Leader registrado exitosamente.");
+        } else {
+          console.error("Error al registrar el lider.");
+        }
       } else {
-        // Manejar errores de la API
         console.error("Error al registrar el equipo.");
       }
     } catch (error) {
       // Manejar errores de red u otros errores
       console.error("Error de red:", error);
+      setErrorMessage('Failed to submit form. Please try again.');
+      setSuccessMessage('');
     }
   };
+
+  const handleAcademicLevelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const enteredValue = e.target.value;
+    const numericValue = parseInt(enteredValue);
+
+    if (!isNaN(numericValue) && numericValue >= 1 && numericValue <= 10) {
+      setAcademicLevel(numericValue);
+      setShowErrorMessage(false);
+    } else {
+      setAcademicLevel("");
+      setShowErrorMessage(true);
+    }
+  };
+
   return (
-    <main className="min-h-screen w-full flex flex-col justify-center items-center">
-      <h1>Registro de Equipo</h1>
+    <main className="min-h-screen w-full flex flex-col justify-center items-center mt-20">
+      <h1>Formulario de Interesado</h1>
       <form onSubmit={handleSubmit} className="mt-4">
-        <label htmlFor="teamName" className="block mb-2">
+        {/* Agrega los campos del formulario */}
+
+        <label htmlFor="team_name" className="block mb-2">
           Nombre del Equipo:
         </label>
         <input
           type="text"
-          id="teamName"
-          value={teamName}
-          onChange={(e) => setTeamName(e.target.value)}
+          id="team_name"
+          value={team_name}
+          onChange={(e) => setTeam(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded"
           required
         />
 
-        <label htmlFor="numMembers" className="block mt-4 mb-2">
-          Número de Integrantes:
+        <label htmlFor="first_name" className="block mb-2">
+          Nombre:
         </label>
         <input
-          type="number"
-          id="numMembers"
-          value={numMembers}
-          onChange={(e) => setNumMembers(e.target.value)}
+          type="text"
+          id="firstName"
+          value={first_name}
+          onChange={(e) => setFirstName(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded"
           required
         />
+
+        <label htmlFor="last_name" className="block mt-4 mb-2">
+          Apellido:
+        </label>
+        <input
+          type="text"
+          id="last_name"
+          value={last_name}
+          onChange={(e) => setLastName(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        />
+
+        <label htmlFor="email" className="block mt-4 mb-2">
+          Correo:
+        </label>
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        />
+
+        <label htmlFor="phone" className="block mt-4 mb-2">
+          Teléfono:
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        />
+
+        <label htmlFor="faculty" className="block mt-4 mb-2">
+          Facultad:
+        </label>
+        <select
+          id="faculty"
+          value={faculty}
+          onChange={(e) => setFaculty(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        >
+          <option value="" disabled hidden>
+            Seleccione una facultad
+          </option>
+          <option value="FIS">Facultad de Sistemas</option>
+          <option value="FCA">Facultad de Ciencias Administrativas</option>
+          <option value="FC">Facultad de Ciencias</option>
+          <option value="FQA">Facultad de Química y Agroindustria</option>
+          <option value="FCAyA">Facultad de Civil y Ambiental</option>
+          <option value="FEyE">Facultad de Eléctrica y Electrónica</option>
+          <option value="FyG">Facultad de Geología y Petróleos</option>
+          <option value="FM">Facultad de Mecánica</option>
+          <option value="ESFOT">Escuela de Formación de Tecnólogos (ESFOT)</option>
+          {/* Add more options as needed */}
+        </select>
+
+
+        <label htmlFor="academic_level" className="block mt-4 mb-2">
+          Nivel Académico:
+        </label>
+        <div>
+          <input
+            type="text"
+            pattern="[0-9]*"
+            inputMode="numeric"
+            id="academic_level"
+            value={typeof academic_level === 'number' ? academic_level : ""}
+            onChange={handleAcademicLevelChange}
+            className="w-full p-2 border border-gray-300 rounded"
+            required
+          />
+          {showErrorMessage && (
+            <p className="text-red-500">Please enter a value from 1 to 10.</p>
+          )}
+        </div>
+
+        <label htmlFor="sdgs" className="block mt-4 mb-2">
+          SDGs:
+        </label>
+        <select
+          id="sdg"
+          value={sdg}
+          onChange={(e) => setSelectedSdg(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        >
+          <option value="" disabled>
+            Seleccione un SDG
+          </option>
+          {Array.from({ length: 17 }, (_, index) => (
+            <option key={index + 1} value={index + 1}>
+              {(() => {
+                switch (index + 1) {
+                  case 1:
+                    return 'Acción por el clima';
+                  case 2:
+                    return 'Agua limpia y saneamiento';
+                  case 3:
+                    return 'Alianzas para lograr los objetivos';
+                  case 4:
+                    return 'Ciudades y comunidades sostenibles';
+                  case 5:
+                    return 'Educación de calidad';
+                  case 6:
+                    return 'Energía asequible y no contaminante';
+                  case 7:
+                    return 'Fin de la pobreza';
+                  case 8:
+                    return 'Hambre cero';
+                  case 9:
+                    return 'Igualdad de género';
+                  case 10:
+                    return 'Industria, innovación e infraestructura';
+                  case 11:
+                    return 'Paz, justicia e instituciones sólidas';
+                  case 12:
+                    return 'Producción y consumo responsables';
+                  case 13:
+                    return 'Reducción de las desigualdades';
+                  case 14:
+                    return 'Salud y bienestar';
+                  case 15:
+                    return 'Trabajo decente y crecimiento económico';
+                  case 16:
+                    return 'Vida de ecosistemas terrestres';
+                  case 17:
+                    return 'Vida submarina';
+                  default:
+                    return '';
+                }
+              })()}
+            </option>
+          ))}
+        </select>
 
         <button
           type="submit"
@@ -259,6 +295,8 @@ export default function Teams() {
         >
           Enviar
         </button>
+        <MessageBox message={successMessage} type="success" />
+        <MessageBox message={errorMessage} type="error" />
       </form>
     </main>
   );
