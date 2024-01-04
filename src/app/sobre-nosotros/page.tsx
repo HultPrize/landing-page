@@ -18,7 +18,7 @@ const AboutUs = () => {
           <div className="md:w-1/2">
             <Image
               className="w-full h-auto "
-              src="/home/who-we-are.jpg"
+              src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
               alt="who we are"
               width={500}
               height={500}
@@ -29,7 +29,7 @@ const AboutUs = () => {
           <div className="md:w-1/2">
             <Image
               className="w-full h-auto "
-              src="/home/semifinals.png"
+              src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
               alt="vision"
               width={500}
               height={500}
@@ -61,7 +61,7 @@ const AboutUs = () => {
           <div className="md:w-1/2">
             <Image
               className="w-full h-auto "
-              src="/home/WhatsApp-Image-2023-06-27-at-10.15.42-PM.jpeg"
+              src="https://proyectoib.s3.us-west-2.amazonaws.com/home/WhatsApp-Image-2023-06-27-at-10.15.42-PM.jpeg"
               alt="EPN"
               width={500}
               height={500}

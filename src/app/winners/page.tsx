@@ -14,7 +14,7 @@ const winners = () => {
         <div className="md:w-1/2">
           <img
             className="w-full h-auto "
-            src="/home/who-we-are.jpg"
+            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
             alt="who we are"
           />
         </div>
@@ -23,7 +23,7 @@ const winners = () => {
         <div className="md:w-1/2">
           <img
             className="w-full h-auto "
-            src="/home/semifinals.png"
+            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
             alt="vision"
           />
         </div>
@@ -39,7 +39,7 @@ const winners = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
-            src="/home/2023-hult-prize-winners-with-stella-mccartney.jpg"
+            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/2023-hult-prize-winners-with-stella-mccartney.jpg"
             alt="Image 1"
           />
           <h2 className="text-2xl font-bold mb-2 text-center">Banofi Leather - Ganadores 2023</h2>
@@ -49,7 +49,7 @@ const winners = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
-            src="/home/eco-bana_hultprize.jpg"
+            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/eco-bana_hultprize.jpg"
             alt="Image 2"
           />
           <h2 className="text-2xl font-bold mb-2 text-center">EcoBana - Ganadores 2022</h2>
@@ -60,7 +60,7 @@ const winners = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
-            src="/home/ecospire.png"
+            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/ecospire.png"
             alt="Image 3"
           />
           <h2 className="text-2xl font-bold mb-2">Ecospire - Ganadores 2021</h2>
