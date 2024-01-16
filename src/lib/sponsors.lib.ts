@@ -19,7 +19,7 @@ export const hosts: Sponsor[] = [
   {
     name: "Escuela Politécnica Nacional",
     logo: {
-      url: "/logos/epn/dark.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/epn.png",
       size: logoSizes.square,
     },
     url: "https://www.epn.edu.ec",
@@ -28,20 +28,20 @@ export const hosts: Sponsor[] = [
 
 export const coHosts: Sponsor[] = [
   {
-    name: "Escuela Politécnica Nacional",
+    name: "FIS",
     logo: {
-      url: "/logos/epn/dark.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/fis.png",
       size: logoSizes.square,
     },
-    url: "https://www.epn.edu.ec",
+    url: "https://fis.epn.edu.ec/index.php/es/",
   },
   {
-    name: "Escuela Politécnica Nacional",
+    name: "FCA",
     logo: {
-      url: "/logos/epn/dark.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/fca.png",
       size: logoSizes.square,
     },
-    url: "https://www.epn.edu.ec",
+    url: "https://fca.epn.edu.ec/",
   },
 ];
 
@@ -49,7 +49,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Nova Club",
     logo: {
-      url: "/logos/allies/nova.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/full.png",
       size: logoSizes.horizontal,
     },
     url: "https://www.novaclub.tech",
@@ -57,7 +57,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Club de Emprendimiento",
     logo: {
-      url: "/logos/epn/dark.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/Propuesta+Logo+Club+Emprendimiento+EPN+wb+(1).png",
       size: logoSizes.square,
     },
     url: "",
@@ -66,27 +66,23 @@ export const sponsors: Sponsor[] = [
 
 export const allies: Sponsor[] = [
   {
-    name: "Escuela Politécnica Nacional",
+    name: "Imagen Sistemas",
     logo: {
-      url: "/logos/epn/dark.png",
-      size: logoSizes.square,
+      url: "https://hult-prize.s3.amazonaws.com/university/imagen-sistemas.png",
+      size: logoSizes.horizontal,
     },
-    url: "https://www.epn.edu.ec",
+    url: "",
   },
+];
+
+
+export const externals: Sponsor[] = [
   {
-    name: "Escuela Politécnica Nacional",
+    name: "Chaskis",
     logo: {
-      url: "/logos/epn/dark.png",
-      size: logoSizes.square,
+      url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.svg",
+      size: logoSizes.horizontal,
     },
-    url: "https://www.epn.edu.ec",
-  },
-  {
-    name: "Escuela Politécnica Nacional",
-    logo: {
-      url: "/logos/epn/dark.png",
-      size: logoSizes.square,
-    },
-    url: "https://www.epn.edu.ec",
+    url: "https://chaskis.tech/",
   },
 ];
