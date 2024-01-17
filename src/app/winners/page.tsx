@@ -2,20 +2,20 @@ import React from 'react';
 
 const winners = () => {
   return (
-    <div className="bg-slate-50 h-full flex flex-col items-center">
-      <h1 className="text-4xl font-bold mb-4 mt-10">Ganadores Ecuatorianos </h1>
+    <div className="bg-slate-50 h-full flex flex-col items-center pt-20">
+
       <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center  mb-8">
         <div className="md:w-1/2 md:pr-8">
-          <h2 className="text-4xl font-bold mb-4">Ganadora de la EPN</h2>
+          <h2 className="text-4xl font-bold mb-4">Gelwear</h2>
           <p className="mb-6 text-lg">
-            DESCRIPCION DE LA GANANDORA
+            GelWear, una startup ecuatoriana fundada por Carolina Serrano, Victoria Suárez, Daniela Serrano y David Clavijo de Yachay Tech, ha obtenido reconocimiento internacional al ganar el premio global Hult Prize. La startup, iniciada en 2019, se centra en la producción de pañales ecológicos con una cubierta biodegradable hecha de residuos de caña de azúcar. A pesar de los desafíos planteados por la pandemia de COVID-19, GelWear emergió como uno de los 10 ganadores, recibiendo un capital de $100,000 de la organización Hult Prize.
           </p>
         </div>
         <div className="md:w-1/2">
           <img
             className="w-full h-auto "
-            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
-            alt="who we are"
+            src="https://hult-prize.s3.amazonaws.com/winners/gel-wear.jpeg"
+            alt="Gelwear"
           />
         </div>
       </div>
@@ -23,14 +23,14 @@ const winners = () => {
         <div className="md:w-1/2">
           <img
             className="w-full h-auto "
-            src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
-            alt="vision"
+            src="https://hult-prize.s3.amazonaws.com/winners/innomaps.jpg"
+            alt="Innomaps"
           />
         </div>
         <div className="md:w-1/2 md:pl-8">
-          <h2 className="text-4xl font-bold mb-4">GANADOR ETHERIUM</h2>
+          <h2 className="text-4xl font-bold mb-4">Innomaps</h2>
           <p className="mb-6 text-lg">
-          DESCRIPCION DEL GANADOR DE ETHERIUM
+            El equipo de la Universidad Yachay Tech, conformado por Nicolás Serrano, María José De la Torre, Romina Bermeo y Leandro Santiago, destacó como uno de los seis finalistas en las regionales del Hult Prize en San Francisco, EE. UU., tras ganar la edición On Campus en su universidad. Presentaron INNOMAPS, una plataforma que utiliza datos abiertos de instituciones públicas y privadas para georreferenciar empresas, con el objetivo de mejorar la distribución de negocios en las ciudades y abordar el desempleo juvenil. La iniciativa nació al identificar las dificultades de los emprendedores en Ecuador al establecer negocios.
           </p>
         </div>
       </div>
