@@ -24,16 +24,16 @@ export default function Hero() {
         />
         {/* Mobile */}
         <Image
-          src={"/logos/hp-white.png"}
+          src={"/logos/hult-prize/vertical/white.png"}
           height={50}
           width={50}
           alt={"Logo Hult Prize"}
           className="h-16 md:hidden"
         />
         <Image
-          src={"/logos/epn.png"}
+          src={"/logos/epn/white.png"}
           height={50}
-          width={100}
+          width={130}
           alt={"Logo Escuela Politécnica Nacional"}
           className="h-16 md:hidden"
         />
