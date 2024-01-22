@@ -2,16 +2,16 @@ import { Sponsor } from "@/app/types";
 
 const logoSizes = {
   square: {
-    width: 125,
-    height: 125,
+    width: 200,
+    height: 200,
   },
   horizontal: {
-    width: 250,
-    height: 125,
+    width: 200,
+    height: 100,
   },
   vertical: {
-    width: 125,
-    height: 250,
+    width: 100,
+    height: 200,
   },
 };
 
@@ -47,10 +47,21 @@ export const coHosts: Sponsor[] = [
 
 export const sponsors: Sponsor[] = [
   {
+    name: "Chaskis",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.svg",
+      size: logoSizes.horizontal,
+    },
+    url: "https://chaskis.tech/",
+  },
+];
+
+export const allies: Sponsor[] = [
+  {
     name: "Nova Club",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/university/full.png",
-      size: logoSizes.horizontal,
+      size: logoSizes.square,
     },
     url: "https://www.novaclub.tech",
   },
@@ -62,9 +73,6 @@ export const sponsors: Sponsor[] = [
     },
     url: "",
   },
-];
-
-export const allies: Sponsor[] = [
   {
     name: "Imagen Sistemas",
     logo: {
@@ -75,14 +83,4 @@ export const allies: Sponsor[] = [
   },
 ];
 
-
-export const externals: Sponsor[] = [
-  {
-    name: "Chaskis",
-    logo: {
-      url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.svg",
-      size: logoSizes.horizontal,
-    },
-    url: "https://chaskis.tech/",
-  },
-];
+export const mediaPartners: Sponsor[] = [];

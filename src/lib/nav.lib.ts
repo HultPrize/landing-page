@@ -4,8 +4,8 @@ export const navItems = [
     link: "/sobre-nosotros",
   },
   {
-    name: "Cómo participar",
-    link: "/roadmap",
+    name: "Cómo funciona",
+    link: "https://www.hultprize.org/how-it-works",
   },
   {
     name: "Casos de éxito",
