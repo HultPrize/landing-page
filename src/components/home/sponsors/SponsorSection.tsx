@@ -21,7 +21,7 @@ export default function SponsorSection({ title, subtitle, sponsors }: Props) {
             key={`home-${sponsor.name}-sponsor`}
             className={"hover:scale-110 transition-all duration-300"}
           >
-            <Link href={sponsor.url}>
+            <Link href={sponsor.url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={sponsor.logo.url}
                 alt={sponsor.name}
