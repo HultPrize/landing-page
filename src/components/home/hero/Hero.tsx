@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
     <section
       className="h-screen w-full px-8 md:px-16 bg relative
-    bg-[url('/cover.png')] bg-cover bg-center bg-no-repeat"
+    bg-[url('/cover.png')] bg-cover bg-center bg-no-repeat flex flex-col justify-start items-center "
     >
       <header className="flex w-full justify-between pt-24 md:pt-32">
         <Image
@@ -38,13 +40,21 @@ export default function Hero() {
           className="h-16 md:hidden"
         />
       </header>
-      <div className="w-full mt-8">
-        <h1 className="font-bold text-4xl md:text-6xl text-white text-center">
-          Hult Prize
-        </h1>
-        <h2 className="mt-2 font-semibold text-2xl md:text-4xl text-white text-center">
-          Escuela Politécnica Nacional
-        </h2>
+      <div className="w-full h-full mt-8 flex flex-col justify-between items-center pb-16">
+        <div>
+          <h1 className="font-bold text-4xl md:text-6xl text-white text-center">
+            Hult Prize
+          </h1>
+          <h2 className="mt-2 font-semibold text-2xl md:text-4xl text-white text-center">
+            Escuela Politécnica Nacional
+          </h2>
+        </div>
+
+        <Link href={"/aplica"}>
+          <Button className="bg-[#E5077F] hover:scale-105 h-0 p-6 rounded-xl text-2xl ml-2">
+            Aplica
+          </Button>
+        </Link>
       </div>
     </section>
   );
