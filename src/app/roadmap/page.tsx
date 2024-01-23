@@ -9,7 +9,7 @@ import ContentMap from "@/components/3d-design/ContentMap";
 export default function Home() {
   return (
     <>
-      <div className="w-full h-[100vh] bg-[#ffa0d94b]">
+      <div className="w-full h-[100vh] ">
         <Map />
         <ContentMap />
       </div>

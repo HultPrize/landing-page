@@ -1,34 +1,55 @@
-"use client"
+"use client";
 
-import { roadmapItems } from "@/lib/roadmap.lib"
-
-
+import { roadmapItems } from "@/lib/roadmap.lib";
 
 export default function ContentMap() {
-
   return (
     <div>
-      <div id='page-1' className='absolute sm:top-[50%] top-[20%] sm:left-[8%] left-[20%] font-bold sm:text-4xl text-xl z-10 pointer-events-none'>
-        <h1 className="text-[#E6007F]  ">The Competition</h1>
-        <h2 className="text-[#E6007F] ">2024</h2>
+      <div
+        id="page-1"
+        className="absolute sm:top-[50%] top-[20%] sm:left-[8%] left-[20%] font-bold sm:text-4xl text-xl z-10 pointer-events-none"
+      >
+        <h1 className="text-[#E5077F] text-4xl md:text-6xl">The Competition</h1>
+        <h2 className="text-[#E5077F] font-semibold mt-2">Hult Prize 2024</h2>
       </div>
 
-
-      <div id='page-4' className='absolute sm:top-[60%] top-[50%] sm:left-[10%] left-[15%] text-[black] sm:text-2xl text-xl  z-10 opacity-0 pointer-events-none sm:w-[40%] w-[70%]'>
-        Cada año, Hult Prize desafía a los jóvenes a resolver los problemas más apremiantes del mundo a través del emprendimiento social innovador.
+      <div
+        id="page-4"
+        className="absolute sm:top-[60%] top-[50%] sm:left-[10%] left-[15%] text-[black] sm:text-2xl text-xl  z-10 opacity-0 pointer-events-none sm:w-[40%] w-[70%]"
+      >
+        <h2 className="text-[#E5077F] md:text-4xl text-xl font-semibold">
+          Competencia Mundial
+        </h2>
+        <p className="mt-2">
+          Cada año, Hult Prize desafía a los jóvenes a resolver los problemas
+          más apremiantes del mundo a través del emprendimiento social
+          innovador.
+        </p>
       </div>
 
       {roadmapItems.map((roadmap_item: any, index: number) => (
-        <div id={`${roadmap_item.id_item}`} className={`${roadmap_item.props}`} key={index}>
-          <h1 className="text-[#E6007F] sm:text-3xl text-2xl">{roadmap_item.title}</h1>
-          <h2 className="text-[#E6007F] sm:text-2xl text-xl">{roadmap_item.subtitle}</h2>
-          <p className="font-normal sm:text-xl text-base">{roadmap_item.description}</p>
+        <div
+          id={`${roadmap_item.id_item}`}
+          className={`${roadmap_item.props}`}
+          key={index}
+        >
+          <h1 className="text-[#E5077F] sm:text-3xl text-2xl">
+            {roadmap_item.title}
+          </h1>
+          <h2 className="text-[#E5077F] sm:text-2xl text-xl font-semibold">
+            {roadmap_item.subtitle}
+          </h2>
+          <div className="flex flex-col gap-2 mt-2">
+            {roadmap_item.description.map(
+              (parapraph: string, index: number) => (
+                <p className="font-normal sm:text-xl text-base" key={index}>
+                  {parapraph}
+                </p>
+              )
+            )}
+          </div>
         </div>
-
       ))}
-
-
-
 
       {/*
 
@@ -59,11 +80,6 @@ export default function ContentMap() {
 
 
  */}
-
-
-
-
-
 
       {/* 
       <p id='page-2' className='absolute sm:top-[30%] top-[10%] left-[5%] text-[#E6007F] sm:text-5xl text-3xl font-bold z-10 opacity-0 pointer-events-none '>Programa En Campus y<br />Solicitud Abierta</p>
@@ -138,5 +154,5 @@ export default function ContentMap() {
       </div>
 */}
     </div>
-  )
+  );
 }
