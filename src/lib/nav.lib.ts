@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     name: "Cómo funciona",
-    link: "https://www.hultprize.org/how-it-works",
+    link: "/roadmap",
   },
   {
     name: "Casos de éxito",

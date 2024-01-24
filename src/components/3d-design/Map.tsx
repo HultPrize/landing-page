@@ -418,6 +418,7 @@ function Model(props: any) {
     {/* Seccion 1*/ }
 
     timeline.current.to(page_2_ref, { opacity: 1, duration: 0.4 }, 0.4)
+    timeline.current.to(page_2_ref, { opacity: 0, duration: 0.4 }, 0.65)
 
     timeline.current.to(page_3_ref, { opacity: 1, duration: 0.4 }, 0.7)
 
@@ -433,11 +434,11 @@ function Model(props: any) {
       timeline.current.to(generalGroupRef.current.position, { x: generalGroupRef.current.position.x - 10, duration: 0.5 }, 1.7)
     }
 
-    timeline.current.to(page_2_ref, { x: windowWidth < 640 ? 50 : 530, y: windowWidth < 640 ? 70 : -100, duration: 0.3 }, 1.9)
+    //timeline.current.to(page_2_ref, { x: windowWidth < 640 ? 50 : 530, y: windowWidth < 640 ? 70 : -100, duration: 0.3 }, 1.9)
     timeline.current.to(page_5_ref, { opacity: 1, duration: 0.4 }, 1.9)
 
 
-    timeline.current.to(page_2_ref, { opacity: 0, duration: 0.4 }, 2.2)
+    //timeline.current.to(page_2_ref, { opacity: 0, duration: 0.4 }, 2.2)
     timeline.current.to(page_5_ref, { opacity: 0, duration: 0.4 }, 2.2)
     if (generalGroupRef.current) {
       timeline.current.to(generalGroupRef.current.position, { x: generalGroupRef.current.position.x + 0.01, y: generalGroupRef.current.position.y + 12, duration: 0.5 }, 2.3)
@@ -462,7 +463,7 @@ function Model(props: any) {
     timeline.current.to(page_8_ref, { x: windowWidth < 640 ? 60 : 730, y: windowWidth < 640 ? 410 : -10, duration: 0.3 }, 4.0)
     timeline.current.to(page_10_ref, { opacity: 1, duration: 0.4 }, 4.0)
     if (generalGroupRef.current) {
-      timeline.current.to(generalGroupRef.current.position, { x: generalGroupRef.current.position.x - 10, duration: 0.5 }, 4.0)
+      timeline.current.to(generalGroupRef.current.position, { x: generalGroupRef.current.position.x - 13, duration: 0.5 }, 4.0)
     }
 
 
