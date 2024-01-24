@@ -17,7 +17,7 @@ export const roadmapItems = [
     ],
     id_item: "page-4",
     props:
-      "absolute sm:top-[60%] top-[65%] sm:left-[30%] left-[25%] text-[black] sm:text-3xl text-xl font-bold z-10 opacity-0 pointer-events-none sm:w-[60%] w-[70%]",
+      "absolute sm:top-[50%] top-[40%] sm:left-[20%] left-[5%] text-[black] sm:text-3xl text-xl font-bold z-10 opacity-0 pointer-events-none sm:w-[60%] w-[70%]",
   },
   {
     title: "Local Competition",
@@ -27,7 +27,7 @@ export const roadmapItems = [
     ],
     id_item: "page-5",
     props:
-      "absolute sm:top-[65%] top-[25%] sm:right-[4%] right-[2%] text-[black] sm:text-3xl text-xl font-bold z-10 opacity-0 pointer-events-none sm:w-[45%] w-[40%]",
+      "absolute sm:top-[20%] top-[20%] sm:right-[2%] right-[2%] text-[black] sm:text-3xl text-xl font-bold z-10 opacity-0 pointer-events-none sm:w-[45%] w-[40%]",
   },
   {
     title: "Step 1: Qualifiers",
