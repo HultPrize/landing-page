@@ -15,6 +15,12 @@ export const metadata: Metadata = {
       type: "image/svg",
     },
   },
+  metadataBase: new URL("https://hultprize.epn.edu.ec/"),
+  openGraph:{
+    title: "Hult Prize at EPN",
+    description:
+      "The greateast competition for social entrepreneurship in the world is at EPN.",
+  }
 };
 
 export default function RootLayout({
