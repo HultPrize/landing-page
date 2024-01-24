@@ -13,19 +13,6 @@ export default function ContentMap() {
         <h2 className="text-[#E5077F] font-semibold mt-2">Hult Prize 2024</h2>
       </div>
 
-      <div
-        id="page-4"
-        className="absolute sm:top-[60%] top-[50%] sm:left-[10%] left-[15%] text-[black] sm:text-2xl text-xl  z-10 opacity-0 pointer-events-none sm:w-[40%] w-[70%]"
-      >
-        <h2 className="text-[#E5077F] md:text-4xl text-xl font-semibold">
-          Competencia Mundial
-        </h2>
-        <p className="mt-2">
-          Cada año, Hult Prize desafía a los jóvenes a resolver los problemas
-          más apremiantes del mundo a través del emprendimiento social
-          innovador.
-        </p>
-      </div>
 
       {roadmapItems.map((roadmap_item: any, index: number) => (
         <div
@@ -39,7 +26,7 @@ export default function ContentMap() {
           <h2 className="text-[#E5077F] sm:text-2xl text-xl font-semibold">
             {roadmap_item.subtitle}
           </h2>
-          <div className="flex flex-col gap-2 mt-2">
+          <div className="flex flex-col gap-2 mt-2 text-black">
             {roadmap_item.description.map(
               (parapraph: string, index: number) => (
                 <p className="font-normal sm:text-xl text-base" key={index}>
