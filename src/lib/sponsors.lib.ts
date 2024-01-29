@@ -38,7 +38,7 @@ export const coHosts: Sponsor[] = [
   {
     name: "FCA",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/fis.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/fca.png",
       size: logoSizes.square,
     },
     url: "https://fca.epn.edu.ec/",
@@ -50,10 +50,7 @@ export const sponsors: Sponsor[] = [
     name: "Chaskis",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.png",
-      size: {
-        width: 300,
-        height: 300,
-      },
+      size: logoSizes.square,
     },
     url: "https://chaskis.tech/",
   },
@@ -88,7 +85,7 @@ export const allies: Sponsor[] = [
     name: "Imagen Sistemas",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/strategic-allies/imagen-sistemas.png",
-      size: logoSizes.horizontal,
+      size: logoSizes.square,
     },
     url: "",
   },
@@ -115,7 +112,7 @@ export const partners: Sponsor[] = [
     name: "Asociación de Estudiantes de Ingeniería de Sistemas",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/partners/asociacion-ingenieria-sistemas.png",
-      size: logoSizes.horizontal,
+      size: logoSizes.square,
     },
     url: "",
   },
