@@ -38,7 +38,7 @@ export const coHosts: Sponsor[] = [
   {
     name: "FCA",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/fca.png",
+      url: "https://hult-prize.s3.amazonaws.com/university/fis.png",
       size: logoSizes.square,
     },
     url: "https://fca.epn.edu.ec/",
@@ -49,7 +49,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Chaskis",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.svg",
+      url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.png",
       size: {
         width: 300,
         height: 300,
@@ -63,7 +63,7 @@ export const allies: Sponsor[] = [
   {
     name: "Facultad de Ciencias",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/fc.jpeg",
+      url: "https://hult-prize.s3.amazonaws.com/strategic-allies/facultad-ciencias.png",
       size: logoSizes.square,
     },
     url: "https://ciencias.epn.edu.ec/",
@@ -71,7 +71,7 @@ export const allies: Sponsor[] = [
   {
     name: "Nova Club",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/full.png",
+      url: "https://hult-prize.s3.amazonaws.com/strategic-allies/nova.png",
       size: logoSizes.square,
     },
     url: "https://www.novaclub.tech",
@@ -79,7 +79,7 @@ export const allies: Sponsor[] = [
   {
     name: "Club de Emprendimiento",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/Propuesta+Logo+Club+Emprendimiento+EPN+wb+(1).png",
+      url: "https://hult-prize.s3.amazonaws.com/strategic-allies/emprendimiento-politecnico.png",
       size: logoSizes.square,
     },
     url: "",
@@ -87,7 +87,7 @@ export const allies: Sponsor[] = [
   {
     name: "Imagen Sistemas",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/imagen-sistemas.png",
+      url: "https://hult-prize.s3.amazonaws.com/strategic-allies/imagen-sistemas.png",
       size: logoSizes.horizontal,
     },
     url: "",
@@ -98,7 +98,7 @@ export const partners: Sponsor[] = [
   {
     name: "Asociación de Estudiantes de la Facultad de Ciencias",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/aeeicef.jpeg",
+      url: "https://hult-prize.s3.amazonaws.com/partners/asociacion-ciencias.png",
       size: logoSizes.square,
     },
     url: "",
@@ -106,7 +106,7 @@ export const partners: Sponsor[] = [
   {
     name: "Asociación de Estudiantes de la Facultad de Ciencias Administrativas",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/aefca.jpeg",
+      url: "https://hult-prize.s3.amazonaws.com/partners/asociacion-ciencias-administrativas.png",
       size: logoSizes.square,
     },
     url: "",
@@ -114,7 +114,7 @@ export const partners: Sponsor[] = [
   {
     name: "Asociación de Estudiantes de Ingeniería de Sistemas",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/aeis.jpeg",
+      url: "https://hult-prize.s3.amazonaws.com/partners/asociacion-ingenieria-sistemas.png",
       size: logoSizes.horizontal,
     },
     url: "",
@@ -122,7 +122,15 @@ export const partners: Sponsor[] = [
   {
     name: "Asociación de Estudiantes de la Facultad de Ingeniería Química",
     logo: {
-      url: "https://hult-prize.s3.amazonaws.com/university/aeiq.png",
+      url: "https://hult-prize.s3.amazonaws.com/partners/asociacion-ingenieria-quimica.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "Federación de Estudiantes de la Escuela Politécnica Nacional",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/partners/fepon.png",
       size: logoSizes.square,
     },
     url: "",
