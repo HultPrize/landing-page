@@ -1,6 +1,6 @@
 import React from "react";
 import SponsorSection from "./SponsorSection";
-import { allies, coHosts, hosts, sponsors, mediaPartners } from "@/lib/sponsors.lib";
+import { allies, coHosts, hosts, sponsors, partners } from "@/lib/sponsors.lib";
 
 export default function Sponsors() {
   return (
@@ -9,7 +9,7 @@ export default function Sponsors() {
       <SponsorSection title="Co-Hosts" subtitle="Ciencias Administrativas y Sistemas" sponsors={coHosts} />
       <SponsorSection title="Aliados Estratégicos" subtitle="Ejes Fundamentales" sponsors={allies}/>
       <SponsorSection title="Sponsors" subtitle="Confían en nosotros" sponsors={sponsors} />
-      <SponsorSection title="Media Partners" subtitle="Comprometidos con mejorar al mundo" sponsors={mediaPartners} />
+      <SponsorSection title="Partners" subtitle="Comprometidos con mejorar el mundo" sponsors={partners} />
     </div>
   );
 }
