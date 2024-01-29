@@ -2,16 +2,16 @@ import { Sponsor } from "@/app/types";
 
 const logoSizes = {
   square: {
-    width: 200,
-    height: 200,
+    width: 170,
+    height: 170,
   },
   horizontal: {
-    width: 200,
-    height: 100,
+    width: 170,
+    height: 85,
   },
   vertical: {
-    width: 100,
-    height: 200,
+    width: 85,
+    height: 175,
   },
 };
 
@@ -33,7 +33,7 @@ export const coHosts: Sponsor[] = [
       url: "https://hult-prize.s3.amazonaws.com/university/fis.png",
       size: logoSizes.square,
     },
-    url: "https://fis.epn.edu.ec/index.php/es/",
+    url: "https://fis.epn.edu.ec",
   },
   {
     name: "FCA",
@@ -50,13 +50,24 @@ export const sponsors: Sponsor[] = [
     name: "Chaskis",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.svg",
-      size: logoSizes.horizontal,
+      size: {
+        width: 300,
+        height: 300,
+      },
     },
     url: "https://chaskis.tech/",
   },
 ];
 
 export const allies: Sponsor[] = [
+  {
+    name: "Facultad de Ciencias",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/university/fc.jpeg",
+      size: logoSizes.square,
+    },
+    url: "https://ciencias.epn.edu.ec/",
+  },
   {
     name: "Nova Club",
     logo: {
@@ -83,4 +94,37 @@ export const allies: Sponsor[] = [
   },
 ];
 
-export const mediaPartners: Sponsor[] = [];
+export const partners: Sponsor[] = [
+  {
+    name: "Asociación de Estudiantes de la Facultad de Ciencias",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/university/aeeicef.jpeg",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "Asociación de Estudiantes de la Facultad de Ciencias Administrativas",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/university/aefca.jpeg",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "Asociación de Estudiantes de Ingeniería de Sistemas",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/university/aeis.jpeg",
+      size: logoSizes.horizontal,
+    },
+    url: "",
+  },
+  {
+    name: "Asociación de Estudiantes de la Facultad de Ingeniería Química",
+    logo: {
+      url: "https://hult-prize.s3.amazonaws.com/university/aeiq.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+];
