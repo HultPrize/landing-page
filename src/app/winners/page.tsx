@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const winners = () => {
   return (
     <div className="bg-slate-50 h-full flex flex-col items-center pt-20">
@@ -12,8 +14,10 @@ const winners = () => {
           </p>
         </div>
         <div className="md:w-1/2">
-          <img
+          <Image
             className="w-full h-auto "
+            height={300}
+            width={300}
             src="https://hult-prize.s3.amazonaws.com/winners/gel-wear.jpeg"
             alt="Gelwear"
           />
@@ -21,8 +25,10 @@ const winners = () => {
       </div>
       <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
-          <img
+          <Image
             className="w-full h-auto "
+            height={300}
+            width={300}
             src="https://hult-prize.s3.amazonaws.com/winners/innomaps.jpg"
             alt="Innomaps"
           />
@@ -37,8 +43,10 @@ const winners = () => {
       <h1 className="text-4xl font-bold mb-4 mt-10">Ganadores Mundiales </h1>
       <div className="max-w-4xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         <div className="flex flex-col items-center">
-          <img
+          <Image
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
+            height={300}
+            width={300}
             src="https://proyectoib.s3.us-west-2.amazonaws.com/home/2023-hult-prize-winners-with-stella-mccartney.jpg"
             alt="Image 1"
           />
@@ -47,8 +55,10 @@ const winners = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <img
+          <Image
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
+            height={300}
+            width={300}
             src="https://proyectoib.s3.us-west-2.amazonaws.com/home/eco-bana_hultprize.jpg"
             alt="Image 2"
           />
@@ -58,10 +68,12 @@ const winners = () => {
 
         {/* Tercera columna */}
         <div className="flex flex-col items-center">
-          <img
+          <Image
             className="w-full h-auto object-cover min-h-40 max-h-72 mb-4"
             src="https://proyectoib.s3.us-west-2.amazonaws.com/home/ecospire.png"
             alt="Image 3"
+            height={300}
+            width={300}
           />
           <h2 className="text-2xl font-bold mb-2">Ecospire - Ganadores 2021</h2>
           <p className="text-lg mb-4">Utilizar residuos de alimentos para ofrecerle productos de papel económicos y ecológicos sin talar un solo árbol.</p>

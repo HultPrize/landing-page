@@ -1,44 +1,70 @@
-"use client"
-import * as THREE from 'three'
-import { useState, useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, Html, OrbitControls, Environment, ContactShadows, Preload } from '@react-three/drei'
-import { FaMapMarkerAlt } from 'react-icons/fa'
-import React, { Suspense } from 'react'
-
+"use client";
+import * as THREE from "three";
+import { useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import {
+  useGLTF,
+  Html,
+  OrbitControls,
+  Environment,
+  ContactShadows,
+  Preload,
+} from "@react-three/drei";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import React, { Suspense } from "react";
+import Image from "next/image";
 
 const markerData = [
-  [[0, Math.PI / 8, -Math.PI / 3], [1.8, 0.8, 0]],
-  [[0, 0, -Math.PI / 2], [2, 0.5, 0.5]],
-  [[0, -Math.PI / 4, -Math.PI / 3], [1.4, 0.7, 1]],
-  [[0, 0, Math.PI / 2],[-2, -0.3, 0]],
-  [[0, -Math.PI / 6, Math.PI / 4], [-1.6, 0.9, -1.0]],
-  [[0, -Math.PI / 6, Math.PI / 4],[-2, 0.7, -0.6]],
-  [[0, -Math.PI / 2, -Math.PI / 2], [0, 0, 2]],
-  [[0, 0, 0], [0,2,0]]
+  [
+    [0, Math.PI / 8, -Math.PI / 3],
+    [1.8, 0.8, 0],
+  ],
+  [
+    [0, 0, -Math.PI / 2],
+    [2, 0.5, 0.5],
+  ],
+  [
+    [0, -Math.PI / 4, -Math.PI / 3],
+    [1.4, 0.7, 1],
+  ],
+  [
+    [0, 0, Math.PI / 2],
+    [-2, -0.3, 0],
+  ],
+  [
+    [0, -Math.PI / 6, Math.PI / 4],
+    [-1.6, 0.9, -1.0],
+  ],
+  [
+    [0, -Math.PI / 6, Math.PI / 4],
+    [-2, 0.7, -0.6],
+  ],
+  [
+    [0, -Math.PI / 2, -Math.PI / 2],
+    [0, 0, 2],
+  ],
+  [
+    [0, 0, 0],
+    [0, 2, 0],
+  ],
 ];
 
-
-
-var contMarker=0
-const maxMarker=markerData.length
+var contMarker = 0;
+const maxMarker = markerData.length;
 
 function Marker({ children, ...props }: any) {
-
   const groupRef = useRef<THREE.Group | undefined>(undefined);
   const [scale, setScale] = useState(0);
   const maxScale = 1.2;
   const minScale = 0.2;
   const speed = 0.2;
   useFrame((state, delta) => {
-
-
     setScale((prevScale) => {
       const newScale = prevScale + speed * delta;
-      var result= Math.min(Math.max(newScale, minScale), maxScale);
-      if(result>=(maxScale)){
-        contMarker+=1
-        result=minScale
+      var result = Math.min(Math.max(newScale, minScale), maxScale);
+      if (result >= maxScale) {
+        contMarker += 1;
+        result = minScale;
       }
       return result;
     });
@@ -46,20 +72,20 @@ function Marker({ children, ...props }: any) {
     if (groupRef.current) {
       groupRef.current.scale.set(scale, scale, scale);
     }
-
   });
 
-  if(contMarker==maxMarker){
-    contMarker=0
+  if (contMarker == maxMarker) {
+    contMarker = 0;
   }
 
   return (
-    <group ref={groupRef} {...props} rotation={markerData[contMarker][0]} position={markerData[contMarker][1]}>
-      <Html
-        transform
-        occlude
-        style={{ pointerEvents: 'none' }}
-      >
+    <group
+      ref={groupRef}
+      {...props}
+      rotation={markerData[contMarker][0]}
+      position={markerData[contMarker][1]}
+    >
+      <Html transform occlude style={{ pointerEvents: "none" }}>
         {children}
       </Html>
     </group>
@@ -75,65 +101,77 @@ function Model(props: any) {
   title: LowPoly Earth
   */
 
-
   const groupRef = useRef<THREE.Group | undefined>(undefined);
 
-
-  const { nodes, materials }: any = useGLTF('/models3D/little_planet_earth/earth.gltf')
+  const { nodes, materials }: any = useGLTF(
+    "/models3D/little_planet_earth/earth.gltf"
+  );
   return (
     <group ref={groupRef} {...props}>
-      
       <group scale={0.2}>
         <group rotation={[-Math.PI / 2, 0, 0]} scale={0.05}>
           <group position={[0, -1161.544, 0]} rotation={[Math.PI / 2, 0, 0]}>
             <group position={[0, 0, -500]}>
               <group position={[16.462, -47.867, -653.132]}>
-                <mesh geometry={nodes.Clouds_2_Clouds_1_1.geometry} material={materials.Clouds} />
-                <mesh geometry={nodes.Clouds_2_Clouds_1_2.geometry} material={materials.material} />
-                <mesh geometry={nodes.Clouds_2_Clouds_1_3.geometry} material={materials['Mat.3']} />
-                <mesh geometry={nodes.Clouds_2_Clouds_1_4.geometry} material={materials.material_3} />
+                <mesh
+                  geometry={nodes.Clouds_2_Clouds_1_1.geometry}
+                  material={materials.Clouds}
+                />
+                <mesh
+                  geometry={nodes.Clouds_2_Clouds_1_2.geometry}
+                  material={materials.material}
+                />
+                <mesh
+                  geometry={nodes.Clouds_2_Clouds_1_3.geometry}
+                  material={materials["Mat.3"]}
+                />
+                <mesh
+                  geometry={nodes.Clouds_2_Clouds_1_4.geometry}
+                  material={materials.material_3}
+                />
               </group>
             </group>
           </group>
         </group>
       </group>
 
-
       <group scale={[3, 3, 3]}>
         <Marker>
-          <section className='flex items-center justify-center flex-col'>
-            <img src='/logo.webp' className='w-10' />
-            <FaMapMarkerAlt style={{ color: '#E6007F' }} />
+          <section className="flex items-center justify-center flex-col">
+            <Image
+              src="/logo.webp"
+              height={300}
+              width={300}
+              alt="logo"
+              className="w-10"
+            />
+            <FaMapMarkerAlt style={{ color: "#E6007F" }} />
           </section>
         </Marker>
       </group>
-
     </group>
-  )
+  );
 }
-
 
 function Loading() {
   return (
     <Html>
-        <img src='/logo.webp' alt='Hult Prize' />
+      <Image src="/logo.webp" height={300} width={300} alt="Hult Prize" />
     </Html>
-  )
+  );
 }
 
 export default function Earth(props: any) {
   return (
-    <Canvas  camera={{ position: [0, 0, 20], fov: 50 }}>
+    <Canvas camera={{ position: [0, 0, 20], fov: 50 }}>
       <color attach="background" args={["white"]} />
       <ambientLight intensity={0.9} />
-      <OrbitControls enableZoom={false} enableRotate={true} enablePan={false}  />
-    
+      <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} />
 
-      <Suspense fallback={<Loading />} >
+      <Suspense fallback={<Loading />}>
         <Preload all />
-        <Model {...props}  />
+        <Model {...props} />
       </Suspense>
-
     </Canvas>
-  )
+  );
 }
