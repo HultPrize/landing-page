@@ -54,6 +54,22 @@ export const sponsors: Sponsor[] = [
     },
     url: "https://chaskis.tech/",
   },
+  {
+    name: "IMPAQTO",
+    logo: {
+      url: "/IMPAQTO.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "ETH Tricolor",
+    logo: {
+      url: "/ETH.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
 ];
 
 export const allies: Sponsor[] = [
@@ -89,6 +105,7 @@ export const allies: Sponsor[] = [
     },
     url: "",
   },
+  
 ];
 
 export const partners: Sponsor[] = [
