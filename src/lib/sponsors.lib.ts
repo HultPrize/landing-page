@@ -132,4 +132,12 @@ export const partners: Sponsor[] = [
     },
     url: "",
   },
+  {
+    name: "JVM ",
+    logo: {
+      url: "/jvm.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
 ];
