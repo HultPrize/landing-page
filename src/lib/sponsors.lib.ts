@@ -70,6 +70,14 @@ export const sponsors: Sponsor[] = [
     },
     url: "",
   },
+  {
+    name: "CEDIA",
+    logo: {
+      url: "/CEDIA.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  }
 ];
 
 export const allies: Sponsor[] = [
