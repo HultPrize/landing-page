@@ -47,17 +47,49 @@ export const coHosts: Sponsor[] = [
 
 export const sponsors: Sponsor[] = [
   {
+    name: "WORB",
+    logo: {
+      url: "/worb.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "CEDIA",
+    logo: {
+      url: "/CEDIA.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
     name: "Chaskis",
     logo: {
       url: "https://hult-prize.s3.amazonaws.com/sponsors/chaskis.png",
       size: logoSizes.square,
     },
-    url: "https://chaskis.tech/",
+    url: "",
   },
   {
     name: "IMPAQTO",
     logo: {
       url: "/IMPAQTO.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "CITEC",
+    logo: {
+      url: "/citec.png",
+      size: logoSizes.square,
+    },
+    url: "",
+  },
+  {
+    name: "BYPROS",
+    logo: {
+      url: "/bypros.png",
       size: logoSizes.square,
     },
     url: "",
@@ -71,9 +103,9 @@ export const sponsors: Sponsor[] = [
     url: "",
   },
   {
-    name: "CEDIA",
+    name: "DFH Community",
     logo: {
-      url: "/CEDIA.png",
+      url: "/dfh.png",
       size: logoSizes.square,
     },
     url: "",
@@ -113,7 +145,7 @@ export const allies: Sponsor[] = [
     },
     url: "",
   },
-  
+
 ];
 
 export const partners: Sponsor[] = [
