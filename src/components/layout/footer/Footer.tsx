@@ -35,7 +35,7 @@ export default function Footer() {
 
         <div className="mt-4">
           <p className="text-center">
-            © 2023 Hult Prize at EPN. Todos los derechos reservados.
+            &copy; 2024 Hult Prize at EPN. Todos los derechos reservados.
           </p>
         </div>
       </footer>

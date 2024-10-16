@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section
-      className="h-screen w-full px-8 md:px-16 bg relative
-    bg-[url('/cover.png')] bg-cover bg-center bg-no-repeat flex flex-col justify-start items-center "
+    <section className="h-screen w-full px-8 md:px-16 relative
+      bg-[url('/cover.jpg')] bg-cover bg-center bg-no-repeat 
+      flex flex-col justify-start items-center
+      before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+      before:bg-gradient-to-b before:from-pink-700 before:to-transparent before:z-10"
     >
-      <header className="flex w-full justify-between pt-24 md:pt-32">
+      <header className="flex w-full justify-between pt-24 md:pt-32 z-20">
         <Image
           src={"/logos/hult-prize/vertical/white.png"}
           height={100}
@@ -40,7 +42,7 @@ export default function Hero() {
           className="h-16 md:hidden"
         />
       </header>
-      <div className="w-full h-full mt-8 flex flex-col justify-between items-center pb-16">
+      <div className="w-full h-full mt-8 flex flex-col justify-between items-center pb-16 z-20">
         <div>
           <h1 className="font-bold text-4xl md:text-6xl text-white text-center">
             Hult Prize

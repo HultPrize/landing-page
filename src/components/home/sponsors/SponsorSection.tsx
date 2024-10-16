@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Sponsor } from "@/app/types";
-import { cn } from "@/lib/utils";
 
 type Props = {
   title: string;

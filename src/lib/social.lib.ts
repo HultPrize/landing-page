@@ -1,10 +1,10 @@
 import {
   Facebook,
   Instagram,
-  Linkedin,
+  // Linkedin,
   LucideIcon,
   Twitter,
-  Youtube,
+  // Youtube,
 } from "lucide-react";
 
 type SocialData = {
@@ -19,11 +19,11 @@ const instagramData: SocialData = {
   icon: Instagram,
 };
 
-const linkedinData: SocialData = {
-  name: "Linkedin",
-  link: "https://www.linkedin.com/company/hultprizeepn/",
-  icon: Linkedin,
-};
+// const linkedinData: SocialData = {
+//   name: "Linkedin",
+//   link: "https://www.linkedin.com/company/hultprizeepn/",
+//   icon: Linkedin,
+// };
 
 const facebookData: SocialData = {
   name: "Facebook",
@@ -37,16 +37,16 @@ const twitterData: SocialData = {
   icon: Twitter,
 };
 
-const youtubeData: SocialData = {
-    name: "Youtube",
-    link: "https://www.youtube.com/channel/UCZQ2phf8d-YkPcp4Iv9PxkA",
-    icon: Youtube,
-}
+// const youtubeData: SocialData = {
+//     name: "Youtube",
+//     link: "https://www.youtube.com/channel/UCZQ2phf8d-YkPcp4Iv9PxkA",
+//     icon: Youtube,
+// }
 
 export const socialData: SocialData[] = [
   instagramData,
-  linkedinData,
+  // linkedinData,
   twitterData,
   facebookData,
-  youtubeData,
+  // youtubeData,
 ];

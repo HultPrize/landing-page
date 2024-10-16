@@ -7,9 +7,9 @@ export default function Applications() {
   return (
     <main className="min-h-screen w-full flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 mt-16 py-16">
       <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
-        Hult Prize llegó a la EPN!
+        ¡Hult Prize llegó a la EPN!
       </h1>
-      <h2 className="text-xl md:text-2xl mb-4">
+      {/* <h2 className="text-xl md:text-2xl mb-4">
         ¡El formulario de inscripción para el 2024 está abierto!
       </h2>
       <p className="max-w-[1200px]">
@@ -17,7 +17,7 @@ export default function Applications() {
         un impacto real. Los participantes se unen a una comunidad global
         exclusiva de estudiantes emprendedores, mentores y expertos de la
         industria mientras trabajan para ganar un lugar en nuestras Finales
-        Globales, donde los finalistas compiten por <b>$1 millón</b> en fondos
+        Globales, donde los finalistas compiten por <b>1 millón USD</b> en fondos
         para hacer realidad sus grandes ideas.
       </p>
 
@@ -25,8 +25,7 @@ export default function Applications() {
         <h3 className="text-xl font-semibold">Criterios de Eligibilidad</h3>
         <ul className="list-disc ml-5 md:ml-10 flex flex-col gap-2">
           <li>
-            Actualmente debes ser un estudiante matriculado en un programa de
-            búsqueda de títulos.{" "}
+            Actualmente debes ser un estudiante matriculado en el periodo académico 2024-B.{" "}
           </li>
           <li>Los equipos deben tener entre 3 y 5 miembros.</li>
           <li>
@@ -46,9 +45,9 @@ export default function Applications() {
           Completa los siguientes formularios para mantenerte
           actualizado:
         </p>
-      </div>
+      </div>*/}
 
-      <div className="flex flex-col sm:flex-row gap-4 mt-6">
+      {/* <div className="flex flex-col sm:flex-row gap-4 mt-6">
         <Link href={"/aplica/equipos"}>
           <div className="flex flex-col justify-center items-center bg-white border border-[#E6007F] p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3">Inscribe a tu equipo</h3>
@@ -61,6 +60,14 @@ export default function Applications() {
             <PersonStanding className="w-20 h-20" />
           </div>
         </Link>
+      </div> */}
+
+      <div className="w-full max-w-full overflow-hidden">
+        <iframe
+          className="w-full h-[450px] md:h-[700px] lg:h-[950px] border-none"
+          src="https://forms.office.com/Pages/ResponsePage.aspx?id=ak4qaH-nWEmjrJ4mbRiqN4j09zY-VUhJnRbV63MFdkxUOFpTVk1FWkdJVlRPWEhHTU1IWVI0NVhRTi4u&embed=true"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <p className="text-center mt-8">
