@@ -53,7 +53,7 @@ export default function Hero() {
         </div>
 
         <Link href={"/aplica"}>
-          <Button className="bg-[#E5077F] hover:scale-105 h-0 p-6 rounded-xl text-2xl ml-2">
+          <Button className="bg-[#E5077F] hover:scale-105 h-0 p-10 rounded-xl text-2xl ml-2">
             Aplica
           </Button>
         </Link>
