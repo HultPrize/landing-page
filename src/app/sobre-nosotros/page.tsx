@@ -16,24 +16,24 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <Image
+            {/* <Image
               className="w-full h-auto "
               src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
               alt="who we are"
               width={500}
               height={500}
-            />
+            /> */}
           </div>
         </div>
         <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2">
-            <Image
+            {/* <Image
               className="w-full h-auto "
               src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
               alt="vision"
               width={500}
               height={500}
-            />
+            /> */}
           </div>
           <div className="md:w-1/2 md:pl-8">
             <h2 className="text-4xl font-bold mb-4">Nuestra Visión</h2>
@@ -47,7 +47,8 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
+
+        {/* <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-8">
             <h2 className="text-4xl font-bold mb-4">Hult Prize en la EPN</h2>
             <p className="mb-6 text-lg">
@@ -66,6 +67,24 @@ const AboutUs = () => {
               width={500}
               height={500}
             />
+          </div>
+        </div> */}
+        {/* Editions Section */}
+        <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col items-center">
+          <h2 className="text-4xl font-bold mb-4">Ediciones</h2>
+          <div className="relative w-full flex justify-center">
+            {/* Image */}
+            <Image
+              className="w-full h-auto"
+              src="/past_edition.png"
+              alt="Edition 2023"
+              width={500}
+              height={500}
+            />
+            {/* Year */}
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white text-2xl font-bold py-2 px-4">
+              2023-2024
+            </div>
           </div>
         </div>
       </div>

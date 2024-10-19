@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import RadioQuantica from "../../../../public/logos/allies/radio_quantica.png";
 
 const partners: string[] = [
   "https://hult-prize.s3.amazonaws.com/university/epn.png",
   "https://hult-prize.s3.amazonaws.com/university/fis.png",
   "https://hult-prize.s3.amazonaws.com/strategic-allies/facultad-ciencias.png",
-  "https://hult-prize.s3.amazonaws.com/university/fca.png",
+  "../../logos/allies/radio_quantica.png"
   // Add more partner images here
 ];
 
@@ -38,7 +39,7 @@ const Partners: React.FC = () => {
       <div className="mt-8 text-lg md:text-2xl text-black text-center max-w-2xl font-poppins" style={{ fontFamily: 'Poppins, sans-serif' }}>
         <p> El Hult Prize es la competencia internacional más grande de emprendimiento social, donde jóvenes de todo el mundo crean soluciones innovadoras para enfrentar los mayores retos globales. Este prestigioso desafío ha llegado a la Escuela Politécnica Nacional, ofreciendo a nuestros estudiantes la oportunidad de transformar sus ideas en proyectos que impacten positivamente en la sociedad. ¡Únete y sé parte de esta revolución de cambio desde la Poli! </p>
       </div>
-      <h2 className="mt-8 text-3xl font-bold text-center mb-6">Partners</h2>
+      <h2 className="mt-8 text-3xl font-bold text-center mb-6">Con el apoyo de</h2>
       <div className="carousel flex items-center justify-center overflow-hidden relative">
         <div
           className={`flex transition-opacity duration-1000 ${
