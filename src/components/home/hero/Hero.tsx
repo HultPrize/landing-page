@@ -52,7 +52,7 @@ export default function Hero() {
           </h2>
         </div>
 
-        <Link href={"/aplica"}>
+        <Link href={"https://forms.office.com/r/cgiuQK3ttx"}>
           <Button className="bg-[#E5077F] hover:scale-105 h-0 p-10 rounded-xl text-2xl ml-2">
             Aplica
           </Button>
