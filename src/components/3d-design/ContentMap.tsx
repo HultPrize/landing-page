@@ -9,7 +9,7 @@ export default function ContentMap() {
         id="page-1"
         className="absolute sm:top-[50%] top-[20%] sm:left-[8%] left-[20%] font-bold sm:text-4xl text-xl z-10 pointer-events-none"
       >
-        <h1 className="text-[#E5077F] text-4xl md:text-6xl">The Competition</h1>
+        <h1 className="text-[#E5077F] text-4xl md:text-6xl">La Competencia</h1>
         <h2 className="text-[#E5077F] font-semibold mt-2">Hult Prize 2024</h2>
       </div>
 
