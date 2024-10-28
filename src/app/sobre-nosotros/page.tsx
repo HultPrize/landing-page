@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-slate-50 h-full flex flex-col items-center pt-20">
+      <div className="bg-white h-full flex flex-col items-center pt-20">
         <div className="max-w-4xl mx-auto px-4 py-8">
           {/* Misión y Visión */}
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out transform hover:scale-105 mb-12">
@@ -19,29 +19,31 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="md:w-1/2">
-              {/*  */}
-              {/* <Image
+              {/* 
+              <Image
                 className="w-full h-auto transition-opacity duration-500 ease-in-out hover:opacity-80"
                 src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
                 alt="who we are"
                 width={500}
                 height={500}
-              /> */}
+              /> 
+              */}
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out transform hover:scale-105">
             <div className="md:w-1/2">
-              {/*  */}
-              {/* <Image
+              {/* 
+              <Image
                 className="w-full h-auto transition-opacity duration-500 ease-in-out hover:opacity-80"
                 src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
                 alt="vision"
                 width={500}
                 height={500}
-              /> */}
+              /> 
+              */}
             </div>
-             {/* Visión */}
+            {/* Visión */}
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-4xl font-bold mb-4">Nuestra Visión</h2>
               <p className="mb-6 text-lg">
@@ -55,8 +57,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        {/* Ediciones */}
 
+        {/* Ediciones */}
         <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col items-center">
           <h2 className="text-4xl font-bold mb-4">Ediciones</h2>
           <div className="relative w-full flex justify-center transition-transform duration-500 ease-in-out transform hover:scale-105">
