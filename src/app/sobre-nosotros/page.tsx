@@ -12,10 +12,7 @@ const AboutUs = () => {
             <div className="md:w-1/2 md:pr-8">
               <h1 className="text-4xl font-bold mb-4">Nuestra misión</h1>
               <p className="mb-6 text-lg">
-                Hult Prize desafía a los jóvenes a resolver los problemas más
-                apremiantes del mundo a través del emprendimiento social. Cada
-                año, un equipo recibe 1 millón de dólares en financiación para
-                hacer realidad su idea.
+              Inspirar y equipar a los estudiantes de la Escuela Politécnica Nacional para que se conviertan en líderes de cambio social a través de la competencia Hult Prize, ofreciendo un entorno de constante aprendizaje y colaboración donde sus ideas pueden evolucionar en soluciones reales para los desafíos globales. Nuestra misión es potenciar el talento de cada estudiante, impulsándolos a desafiar los límites del emprendimiento y a crear proyectos de impacto que contribuyan a los Objetivos de Desarrollo Sostenible.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -47,12 +44,7 @@ const AboutUs = () => {
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-4xl font-bold mb-4">Nuestra Visión</h2>
               <p className="mb-6 text-lg">
-                Fomentar un movimiento global que utilice la creatividad, la
-                innovación y el emprendimiento como herramientas para resolver
-                problemas sociales críticos. Buscan crear un impacto positivo en
-                el mundo, promoviendo soluciones escalables y sostenibles que
-                aborden desafíos como pobreza, acceso a la educación, cuidado de
-                la salud y sostenibilidad ambiental.
+              Consolidar Hult Prize como una tradición anual en la EPN, a través de un convenio institucional en los próximos tres años, brindando a los estudiantes una plataforma continua para desarrollar habilidades de emprendimiento social y crear soluciones innovadoras a desafíos globales. Ser un referente en la EPN de liderazgo e innovación, por formar generaciones de jóvenes comprometidos con el impacto positivo en sus comunidades y en el mundo.
               </p>
             </div>
           </div>
