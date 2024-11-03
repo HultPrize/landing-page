@@ -15,7 +15,7 @@ type SocialData = {
 
 const instagramData: SocialData = {
   name: "Instagram",
-  link: "https://www.instagram.com/hultprizeepn/",
+  link: "https://www.instagram.com/oncampus_programepn?igsh=aTN4eTltM3N5bWJo",
   icon: Instagram,
 };
 
@@ -27,7 +27,7 @@ const instagramData: SocialData = {
 
 const facebookData: SocialData = {
   name: "Facebook",
-  link: "https://www.facebook.com/hultprizeepn/",
+  link: "https://www.facebook.com/share/12DHLsS3Gsh/?mibextid=LQQJ4d",
   icon: Facebook,
 };
 
@@ -50,3 +50,4 @@ export const socialData: SocialData[] = [
   facebookData,
   // youtubeData,
 ];
+
