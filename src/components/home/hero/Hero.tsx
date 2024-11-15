@@ -1,10 +1,16 @@
-import React from "react";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
+const phases = [
+  { title: "Primera Fase", description: "Conformación de equipos", image: "https://hultprizeat.com/av-assets/img/find.png" },
+  { title: "Segunda Fase", description: "Presentación de tu idea", image: "https://hultprizeat.com/av-assets/img/pitch.png" },
+  { title: "Tercera Fase", description: "Gran Final EPN", image: "https://hultprizeat.com/av-assets/img/advance.png" },
+];
 
 export default function Hero() {
   return (
+    <>
     <section className="h-screen w-full px-8 md:px-16 relative
       bg-[url('https://hult-prize.s3.us-east-1.amazonaws.com/cover.jpg')] bg-cover bg-center bg-no-repeat 
       flex flex-col justify-start items-center
@@ -59,5 +65,28 @@ export default function Hero() {
         </Link>
       </div>
     </section>
+    <br />
+    <h2 className="text-3xl font-bold text-center mb-6">¿Qué es Hult Prize?</h2>
+    <div className="mt-8 text-lg md:text-2xl text-black text-center max-w-2xl font-poppins" style={{ fontFamily: 'Poppins, sans-serif' }}>
+      <p> El Hult Prize es la competencia internacional más grande de emprendimiento social, donde jóvenes de todo el mundo crean soluciones innovadoras para enfrentar los mayores retos globales. Este prestigioso desafío ha llegado a la Escuela Politécnica Nacional, ofreciendo a nuestros estudiantes la oportunidad de transformar sus ideas en proyectos que impacten positivamente en la sociedad. ¡Únete y sé parte de esta revolución de cambio desde la Poli! </p>
+    </div>
+    <h2 className="mt-8 text-3xl font-bold text-center mb-6">Fases del Hult Prize</h2>
+        <div className="flex flex-wrap justify-center mb-8">
+        {phases.map((phase, index) => (
+          <div 
+            key={index} 
+            className="phase-item text-center p-4 hover:scale-105 rounded-xl shadow-md transition-transform duration-300 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
+          >
+            <img 
+              src={phase.image} 
+              alt={phase.title} 
+              className="w-20 h-20 mx-auto" 
+            />
+            <h3 className="text-lg font-bold text-[#E5077F] mt-2">{phase.title}</h3> {/* Magenta */}
+            <p className="mt-2 text-sm text-black">{phase.description}</p> {/* Negro */}
+          </div>
+        ))}
+        </div>
+        </>
   );
 }
