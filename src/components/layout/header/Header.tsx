@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container flex justify-between h-14 items-center">
         <MainNav />
         <MobileNav />
-        <Link href={"https://forms.office.com/r/cgiuQK3ttx"}>
+        <Link href={"/aplica"}>
           <Button className="bg-[#E5077F] h-0 py-5 rounded-xl text-lg ml-2">
             Aplica
           </Button>

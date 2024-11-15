@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="h-screen w-full px-8 md:px-16 relative
-      bg-[url('/cover.jpg')] bg-cover bg-center bg-no-repeat 
+      bg-[url('https://hult-prize.s3.us-east-1.amazonaws.com/cover.jpg')] bg-cover bg-center bg-no-repeat 
       flex flex-col justify-start items-center
       before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
       before:bg-gradient-to-b before:from-pink-700 before:to-transparent before:z-10"
@@ -52,7 +52,7 @@ export default function Hero() {
           </h2>
         </div>
 
-        <Link href={"https://forms.office.com/r/cgiuQK3ttx"}>
+        <Link href={"/aplica"}>
           <Button className="bg-[#E5077F] hover:scale-105 h-0 p-10 rounded-xl text-2xl ml-2">
             Aplica
           </Button>
