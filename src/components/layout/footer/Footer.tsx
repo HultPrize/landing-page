@@ -11,7 +11,7 @@ export default function Footer() {
       <Separator />
       <footer className="px-16 py-8 w-full flex flex-col justify-center items-center">
         <Image
-          src={"/logo.svg"}
+          src={"https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/logo.svg"}
           alt="Hult Prize logo"
           width={300}
           height={150}

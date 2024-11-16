@@ -56,7 +56,7 @@ const AboutUs = () => {
           <div className="relative w-full flex justify-center transition-transform duration-500 ease-in-out transform hover:scale-105">
             <Image
               className="w-full h-auto"
-              src="/past_edition.png"
+              src="https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/past_edition.png"
               alt="Edition 2023"
               width={500}
               height={500}

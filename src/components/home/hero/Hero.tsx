@@ -19,14 +19,14 @@ export default function Hero() {
     >
       <header className="flex w-full justify-between pt-24 md:pt-32 z-20">
         <Image
-          src={"/logos/hult-prize/vertical/white.png"}
+          src="https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/hultprize-white.png"
           height={100}
           width={100}
           alt={"Logo Hult Prize"}
           className="hidden md:block h-24"
         />
         <Image
-          src={"/logos/epn/white.png"}
+          src="https://hult-prize.s3.us-east-1.amazonaws.com/university/epn-white.png"
           height={100}
           width={200}
           alt={"Logo Escuela Politécnica Nacional"}
@@ -34,14 +34,14 @@ export default function Hero() {
         />
         {/* Mobile */}
         <Image
-          src={"/logos/hult-prize/vertical/white.png"}
+          src="https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/hultprize-white.png"
           height={50}
           width={50}
           alt={"Logo Hult Prize"}
           className="h-16 md:hidden"
         />
         <Image
-          src={"/logos/epn/white.png"}
+          src="https://hult-prize.s3.us-east-1.amazonaws.com/university/epn-white.png"
           height={50}
           width={130}
           alt={"Logo Escuela Politécnica Nacional"}

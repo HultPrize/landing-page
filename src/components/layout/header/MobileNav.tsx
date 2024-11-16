@@ -35,7 +35,7 @@ export function MobileNav() {
         >
           <Link href={"/"}>
             <Image
-              src={"/logo.svg"}
+              src={"https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/logo.svg"}
               alt="Hult Prize logo"
               width={200}
               height={100}
