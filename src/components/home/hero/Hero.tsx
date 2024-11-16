@@ -65,12 +65,11 @@ export default function Hero() {
         </Link>
       </div>
     </section>
-    <br />
-    <h2 className="text-3xl font-bold text-center mb-6">¿Qué es Hult Prize?</h2>
-    <div className="mt-8 text-lg md:text-2xl text-black text-center max-w-2xl font-poppins" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <h2 className="mt-14 text-3xl font-bold text-center mb-6">¿Qué es Hult Prize?</h2>
+    <div className="text-lg md:text-2xl text-black text-center max-w-2xl font-poppins" style={{ fontFamily: 'Poppins, sans-serif' }}>
       <p> El Hult Prize es la competencia internacional más grande de emprendimiento social, donde jóvenes de todo el mundo crean soluciones innovadoras para enfrentar los mayores retos globales. Este prestigioso desafío ha llegado a la Escuela Politécnica Nacional, ofreciendo a nuestros estudiantes la oportunidad de transformar sus ideas en proyectos que impacten positivamente en la sociedad. ¡Únete y sé parte de esta revolución de cambio desde la Poli! </p>
     </div>
-    <h2 className="mt-8 text-3xl font-bold text-center mb-6">Fases de la competencia en la EPN</h2>
+    <h2 className="mt-14 text-3xl font-bold text-center mb-6">Fases de la competencia en la EPN</h2>
         <div className="flex flex-wrap justify-center mb-8">
         {phases.map((phase, index) => (
           <div 
