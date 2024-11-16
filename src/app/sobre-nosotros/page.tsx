@@ -16,29 +16,25 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="md:w-1/2">
-              {/* 
               <Image
-                className="w-full h-auto transition-opacity duration-500 ease-in-out hover:opacity-80"
-                src="https://proyectoib.s3.us-west-2.amazonaws.com/home/who-we-are.jpg"
+                className="w-full h-auto transition-opacity duration-500 ease-in-out"
+                src="https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/how-it-works.webp"
                 alt="who we are"
                 width={500}
                 height={500}
-              /> 
-              */}
+              />
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out transform hover:scale-105">
-            <div className="md:w-1/2">
-              {/* 
+            <div className="md:w-1/2"> 
               <Image
-                className="w-full h-auto transition-opacity duration-500 ease-in-out hover:opacity-80"
-                src="https://proyectoib.s3.us-west-2.amazonaws.com/home/semifinals.png"
+                className="w-full h-auto transition-opacity duration-500 ease-in-out"
+                src="https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023.jpeg"
                 alt="vision"
                 width={500}
                 height={500}
-              /> 
-              */}
+              />
             </div>
             {/* Visión */}
             <div className="md:w-1/2 md:pl-8">
