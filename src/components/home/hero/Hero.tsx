@@ -86,6 +86,11 @@ export default function Hero() {
           </div>
         ))}
         </div>
-        </>
+        <Link href={"/howitworks"}>
+          <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-sm font-semibold rounded hover:bg-[#d40672] transition-colors">
+            Más información
+          </Button>
+        </Link>
+    </>
   );
 }

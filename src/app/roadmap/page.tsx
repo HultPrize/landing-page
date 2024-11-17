@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface PhaseProps {
   title: string;
@@ -42,13 +43,14 @@ const Phase: React.FC<PhaseProps> = ({
       </div>
 
       {/* Image Section */}
-      <div className="flex-1 max-w-md">
-        <img
+        <Image
           className="rounded-lg shadow-lg object-contain w-full"
           src={imageSrc}
           alt={alt}
+          layout="responsive"
+          width={500}
+          height={300}
         />
-      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import RadioQuantica from "../../../../public/logos/allies/radio_quantica.png";
 
 const partners: string[] = [
@@ -42,11 +43,12 @@ const Partners: React.FC = () => {
         <div
           className={`flex transition-opacity duration-1000 ${
             isTransitioning ? 'opacity-0' : 'opacity-100'
-          }`}
-        >
-          <img
+          }`}>
+          <Image
             src={partners[currentIndex]}
             alt={`Partner ${currentIndex + 1}`}
+            width={500}
+            height={500}
             className="w-full h-32 object-contain md:h-48 lg:h-64"
           />
         </div>
