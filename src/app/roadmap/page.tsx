@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
+import Link from "next/link";
 
 interface PhaseProps {
   title: string;
@@ -9,6 +11,7 @@ interface PhaseProps {
   imageSrc: string;
   alt: string;
   reverse?: boolean;
+  showButton?: boolean;
 }
 
 const Phase: React.FC<PhaseProps> = ({
@@ -20,6 +23,7 @@ const Phase: React.FC<PhaseProps> = ({
   imageSrc,
   alt,
   reverse,
+  showButton,
 }) => {
   return (
     <div
@@ -38,6 +42,13 @@ const Phase: React.FC<PhaseProps> = ({
               <li key={index}>{detail}</li>
             ))}
           </ul>
+        )}
+        {showButton && (
+          <Link href={"/howitworks"}>
+            <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-sm font-semibold rounded hover:bg-[#d40672] transition-colors">
+              Más información
+            </Button>
+          </Link>
         )}
       </div>
 
@@ -69,6 +80,7 @@ const Home = () => {
       ],
       imageSrc: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-prize.jpeg",
       alt: "Fase Uno",
+      showButton: true,
     },
     {
       title: "Nacionales",
