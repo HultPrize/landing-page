@@ -7,9 +7,9 @@ import RadioQuantica from "../../../../public/logos/allies/radio_quantica.png";
 const partners: string[] = [
   "https://hult-prize.s3.amazonaws.com/university/epn.png",
   "https://hult-prize.s3.us-east-1.amazonaws.com/strategic-allies/Strategia.png",
-  // "https://hult-prize.s3.amazonaws.com/university/fis.png",
-  // "https://hult-prize.s3.amazonaws.com/strategic-allies/facultad-ciencias.png",
+  "https://hult-prize.s3.us-east-1.amazonaws.com/university/facultades/ESFOT.png",
   "https://hult-prize.s3.us-east-1.amazonaws.com/partners/fepon.png",
+  "https://hult-prize.s3.us-east-1.amazonaws.com/partners/asociacion-matematica.png",
   "https://hult-prize.s3.us-east-1.amazonaws.com/partners/radio_quantica.png"
   // Add more partner images here
 ];
