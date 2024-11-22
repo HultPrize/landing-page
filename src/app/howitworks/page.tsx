@@ -94,13 +94,13 @@ export default function Page() {
               onClick={prevPhase}
               className="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition-colors duration-300"
             >
-              Previous
+              Anterior
             </button>
             <button 
               onClick={nextPhase}
               className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 transition-colors duration-300"
             >
-              Next
+              Siguiente
             </button>
           </div>
         </div>
