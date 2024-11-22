@@ -88,7 +88,7 @@ export default function Page() {
           </ul>
         </div>
         <div className="bg-gray-100 px-8 py-4 flex justify-between items-center">
-          <span className="text-sm text-gray-500">Phase {currentPhase + 1} of {phases.length}</span>
+          <span className="text-sm text-gray-500">Fase {currentPhase + 1} de {phases.length}</span>
           <div className="space-x-2">
             <button 
               onClick={prevPhase}
