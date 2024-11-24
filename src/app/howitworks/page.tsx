@@ -18,6 +18,7 @@ const phases = [
     ]   },
   { title: "Semifinal", description: "Perfeccionamiento\ny Pitch", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-presentation.jpeg", details: [  
     "Del 23 Diciembre al 8 Enero",
+    "Evento Presencial: 9 de Enero",
     "Crear un pitch efectivo que resuma la idea, problema, impacto y viabilidad.",  
     "Perfeccionar la idea con planos detallados de un prototipo.",  
     "Practicar el pitch y recibir retroalimentación para mejorarlo.",  
@@ -30,6 +31,7 @@ const phases = [
     ]   },
   { title: "Gran Final", description: "Estrategia de Lanzamiento\ny Validación Final", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-finals.jpeg", details: [  
     "Del 10 Enero al 22 Enero",
+    "Evento Presencial: 23 de Enero",
     "Evaluar y ajustar el plan de negocio según retroalimentación recibida.",  
     "Crear un prototipo físico o digital y realizar pruebas de usuario para mejorar el diseño.",  
     "Ajustar la estrategia de lanzamiento, canales de distribución y tácticas de promoción.",  
