@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 const Winners = () => {
@@ -40,6 +39,25 @@ const Winners = () => {
           </p>
         </div>
       </div>
+
+      <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center mb-8 transition-transform duration-500 ease-in-out transform hover:scale-105">
+        <div className="md:w-1/2 md:pr-8">
+          <h2 className="text-4xl font-bold mb-4">El Futuro Ganador</h2>
+          <p className="mb-6 text-lg">
+            Con un espíritu innovador y una visión transformadora, este nuevo emprendimiento está listo para marcar la diferencia en el mundo. Fundado por un equipo comprometido con la sostenibilidad, la tecnología y el cambio social, su misión es enfrentar algunos de los retos más grandes de nuestra era. Con un enfoque audaz y soluciones creativas, están preparados para revolucionar su industria, impactando positivamente tanto a nivel local como global. Este proyecto no solo busca el éxito económico, sino también generar un legado de innovación y responsabilidad social. ¡El futuro les pertenece!
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <Image
+            className="w-full h-auto"
+            height={300}
+            width={300}
+            src="https://hult-prize.s3.us-east-1.amazonaws.com/winners/unknown.webp"
+            alt="Futuro Emprendimiento"
+          />
+        </div>
+      </div>
+
 
       {/* Ganadores Mundiales */}
       {/* <h1 className="text-4xl font-bold mb-4 mt-10">Ganadores Mundiales</h1>
