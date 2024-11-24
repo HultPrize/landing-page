@@ -5,6 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 const phases = [
   { title: "Primera Fase", description: "Desarrollo de Idea\ny Plan de Negocio", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023.jpeg", details: [  
+    "Del 29 Noviembre al 15 Diciembre",
     "Definir roles del equipo y líder.",  
     "Identificar un problema significativo alineado con los ODS.",  
     "Realizar investigación de mercado y diseño centrado en el ser humano.",  
@@ -16,6 +17,7 @@ const phases = [
     "Presentar un video de 4 minutos exponiendo la idea."  
     ]   },
   { title: "Semifinal", description: "Perfeccionamiento\ny Pitch", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-presentation.jpeg", details: [  
+    "Del 23 Diciembre al 8 Enero",
     "Crear un pitch efectivo que resuma la idea, problema, impacto y viabilidad.",  
     "Perfeccionar la idea con planos detallados de un prototipo.",  
     "Practicar el pitch y recibir retroalimentación para mejorarlo.",  
@@ -27,6 +29,7 @@ const phases = [
     "Exponer ante un panel con 4 minutos de presentación y 2 minutos para preguntas."  
     ]   },
   { title: "Gran Final", description: "Estrategia de Lanzamiento\ny Validación Final", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-finals.jpeg", details: [  
+    "Del 10 Enero al 22 Enero",
     "Evaluar y ajustar el plan de negocio según retroalimentación recibida.",  
     "Crear un prototipo físico o digital y realizar pruebas de usuario para mejorar el diseño.",  
     "Ajustar la estrategia de lanzamiento, canales de distribución y tácticas de promoción.",  
