@@ -15,7 +15,8 @@ const phases = [
     "Desarrollar habilidades en diseño centrado en el humano, emprendimiento y ODS.",  
     "Entregar propuesta escrita con detalles clave (problema, solución, equipo, modelo, etc.).",  
     "Presentar un video de 4 minutos exponiendo la idea."  
-    ]   },
+    ]   
+  },
   { title: "Semifinal", description: "Perfeccionamiento\ny Pitch", image: "https://hult-prize.s3.us-east-1.amazonaws.com/HultPrize/photos/hultprize-epn-2022-2023-presentation.jpeg", details: [  
     "Del 23 Diciembre al 8 Enero",
     "Evento Presencial: 9 de Enero",
