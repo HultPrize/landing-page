@@ -9,3 +9,9 @@ export type Sponsor = {
   };
   url: string;
 };
+
+export type Mentor = {
+  name: string;
+  imageSrc: string;
+  description: string;
+};
