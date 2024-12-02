@@ -52,7 +52,7 @@ export const mentors: Mentor[] = [
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Paulina_Naranjo.jpeg",
     description:
-      "",
+      "Profesional destacada en comunicación estratégica, branding y capacitación. Actualmente, es docente en ESPE Innovativa EP, donde diseña programas educativos sobre manejo de marca y pensamiento crítico. Ha sido Oficial de Comunicación en la Fundación Charles Darwin, liderando estrategias y proyectos de impacto ambiental. También capacita en pitch en la Cámara de Comercio de Quito y Latinnova, apoyando a emprendedores. Con una maestría en Comunicación Estratégica y habilidades digitales avanzadas, Paulina es un referente en el ámbito académico y empresarial.",
   },
   {
     name: "Ricardo Gonzalez",
