@@ -13,7 +13,7 @@ export const mentors: Mentor[] = [
       "Abogada y Maestrante en Compliance y Datos Personales, con múltiples estudios de posgrado en Derecho Digital, Cibercrimen y Derecho Público. Es docente en la Universidad de las Américas y docente investigadora en Ciberderecho. Se desempeña como abogada en libre ejercicio y consultora especializada en datos personales y ciberseguridad.",
   },
   {
-    name: "Ana María Loopa",
+    name: "Ana María Sancho Prado",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Maria_Loopa.jpg",
     description:
@@ -27,7 +27,7 @@ export const mentors: Mentor[] = [
       "Experta en transformación digital con más de 17 años de experiencia en estrategia empresarial y desarrollo tecnológico. Ha ocupado cargos clave en la promoción de la economía digital en Iberoamérica, como Subsecretaria de la Sociedad de la Información y Directora de ALETI. Actualmente, es Consultora Independiente y Directora de Proyectos en el Clúster de Transformación Digital de Guayaquil. Su enfoque está en impulsar la innovación y competitividad mediante la adopción de nuevas tecnologías.",
   },
   {
-    name: "Evely Iza",
+    name: "Evelyn Iza",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Evely_Iza.jpg",
     description:
@@ -48,6 +48,13 @@ export const mentors: Mentor[] = [
       "Abogada y emprendedora con más de 15 años de experiencia en los sectores público y privado. Como Speaker Internacional, se ha destacado por promover la inclusión financiera y la equidad de género. Fundadora de iniciativas como Mujer Segura y WARMI, Nathaly lidera esfuerzos para empoderar a la mujer y reducir la brecha de género en América Latina, convirtiéndose en una figura clave en la transformación del bienestar femenino.",
   },
   {
+    name: "Paulina Naranjo",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Paulina_Naranjo.jpeg",
+    description:
+      "",
+  },
+  {
     name: "Ricardo Gonzalez",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/RICARDO_GONZALEZ.jpg",
@@ -55,7 +62,7 @@ export const mentors: Mentor[] = [
       "Emprendedor y consultor internacional con experiencia en innovación y emprendimiento. MBA por la Universidad EAFIT, ha cofundado más de siete emprendimientos y liderado proyectos en neuromarketing y sostenibilidad. Fue Guest Expert en el Hult Prize 2019, asesorando a finalistas internacionales. Actualmente, es CEO de LATINNOVA y Neuromind, y combina su labor empresarial con la docencia en posgrados y la consultoría para organizaciones como la Cámara de Comercio de Quito y CONQUITO.",
   },
   {
-    name: "Vanesa Gallardo",
+    name: "Vanessa Gallardo",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Vanesa_Gallardo.jpg",
     description:
