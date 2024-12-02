@@ -55,13 +55,6 @@ export const mentors: Mentor[] = [
       "Emprendedor y consultor internacional con experiencia en innovación y emprendimiento. MBA por la Universidad EAFIT, ha cofundado más de siete emprendimientos y liderado proyectos en neuromarketing y sostenibilidad. Fue Guest Expert en el Hult Prize 2019, asesorando a finalistas internacionales. Actualmente, es CEO de LATINNOVA y Neuromind, y combina su labor empresarial con la docencia en posgrados y la consultoría para organizaciones como la Cámara de Comercio de Quito y CONQUITO.",
   },
   {
-    name: "Esteban Espinosa",
-    imageSrc:
-      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Esteban_Espinosa.jpg",
-    description:
-      "Ingeniero en Sistemas y Computación, con más de 15 años de experiencia en desarrollo de software y liderazgo de equipos de desarrollo. Ha trabajado en empresas de tecnología en Ecuador y Estados Unidos, y actualmente es Director de Ingeniería en la empresa de tecnología de la información y servicios, Globant. Apasionado por la tecnología y la innovación, busca impulsar el talento local y apoyar a emprendedores en su camino al éxito.",
-  },
-  {
     name: "Vanesa Gallardo",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Vanesa_Gallardo.jpg",

@@ -133,6 +133,11 @@ export default function Hero() {
           allow="fullscreen"
         ></iframe>
       </div>
+      <Link href={"/mentors"}>
+        <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-lg font-semibold rounded hover:bg-[#d40672] transition-colors">
+          Conoce a tus Mentores
+        </Button>
+      </Link>
     </>
   );
 }

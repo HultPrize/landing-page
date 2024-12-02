@@ -11,4 +11,8 @@ export const navItems = [
     name: "Casos de éxito",
     link: "/winners",
   },
+  {
+    name: "Mentores",
+    link: "/mentors",
+  },
 ];
