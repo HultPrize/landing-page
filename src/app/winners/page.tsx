@@ -44,7 +44,8 @@ const Winners = () => {
         <div className="md:w-1/2 md:pr-8">
           <h2 className="text-4xl font-bold mb-4">El Futuro Ganador</h2>
           <p className="mb-6 text-lg">
-            Con un espíritu innovador y una visión transformadora, este nuevo emprendimiento está listo para marcar la diferencia en el mundo. Fundado por un equipo comprometido con la sostenibilidad, la tecnología y el cambio social, su misión es enfrentar algunos de los retos más grandes de nuestra era. Con un enfoque audaz y soluciones creativas, están preparados para revolucionar su industria, impactando positivamente tanto a nivel local como global. Este proyecto no solo busca el éxito económico, sino también generar un legado de innovación y responsabilidad social. ¡El futuro les pertenece!
+            El futuro pertenece a quienes se atreven a soñar en grande y actuar con determinación. Este emprendimiento, impulsado por innovación, sostenibilidad y un deseo profundo de cambio, busca líderes que no solo quieran competir, sino transformar.
+            Tú tienes la oportunidad de ser ese futuro ganador: un agente de cambio que revoluciona, impacta y deja una huella imborrable en el mundo. Atrévete a imaginar, a crear y a conquistar los desafíos con valentía. ¡El éxito está a tu alcance, y el mundo está esperando que lo hagas tuyo!
           </p>
         </div>
         <div className="md:w-1/2">
