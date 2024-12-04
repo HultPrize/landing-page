@@ -24,7 +24,7 @@ export const mentors: Mentor[] = [
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Aylin_Macas.jpeg",
     description:
-      "Aylín Macas es una **Woman In Tech** con 8 años de experiencia, **COO y cofundadora** de **SSPOT** (plataforma de estacionamiento en LATAM) y **Business Development Manager** en **InnovGroup**, donde apoya a startups en el desarrollo de productos. Tiene estudios en **Innovación y Tecnología** (Universidad Hebrea), **Supply Chain Management** (Universidad José Camilo Cela) e **Ingeniería en Negocios Internacionales** (UDLA). Apasionada por resolver problemas con **IoT**, conecta a estudiantes con la industria a través de la **Academia del IoT** y es **Women Tech Maker Ambassador** por Google.",
+      "Aylín Macas es una Woman In Tech con 8 años de experiencia, COO y cofundadora de SSPOT (plataforma de estacionamiento en LATAM) y Business Development Manager en InnovGroup, donde apoya a startups en el desarrollo de productos. Tiene estudios en **Innovación y Tecnología** (Universidad Hebrea), Supply Chain Management (Universidad José Camilo Cela) e Ingeniería en Negocios Internacionales (UDLA). Apasionada por resolver problemas con IoT, conecta a estudiantes con la industria a través de la Academia del IoT y es Women Tech Maker Ambassador por Google.",
   },
   {
     name: "Azucena Navas",
