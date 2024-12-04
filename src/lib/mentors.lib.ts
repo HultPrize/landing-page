@@ -20,6 +20,20 @@ export const mentors: Mentor[] = [
       "Fundadora de Loopa, docente de maestría en Ciencia de Datos e Inteligencia Artificial en varias universidades del pais. Apasionada emprendedora, directora de tecnología y mentora, comprometida con impulsar el ecosistema emprendedor.",
   },
   {
+    name: "Aylín Macas",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Aylin_Macas.jpeg",
+    description:
+      "Aylín Macas es una **Woman In Tech** con 8 años de experiencia, **COO y cofundadora** de **SSPOT** (plataforma de estacionamiento en LATAM) y **Business Development Manager** en **InnovGroup**, donde apoya a startups en el desarrollo de productos. Tiene estudios en **Innovación y Tecnología** (Universidad Hebrea), **Supply Chain Management** (Universidad José Camilo Cela) e **Ingeniería en Negocios Internacionales** (UDLA). Apasionada por resolver problemas con **IoT**, conecta a estudiantes con la industria a través de la **Academia del IoT** y es **Women Tech Maker Ambassador** por Google.",
+  },
+  {
+    name: "Azucena Navas",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Azucena_Navas.jpg",
+    description:
+      "Ingeniera en Sistemas y Computación con más de 20 años de experiencia en liderazgo empresarial y diseño de estrategias centradas en el usuario. Especialista en desarrollo organizacional, transformación digital y gestión comercial, con formación en Agilidad Organizacional, Business Coaching y Liderazgo de Alto Impacto. Ha ocupado roles clave como Directora de Prevención de Fraude para LATAM, Gerente General y Asesora de Desarrollo Organizacional. Posee competencias en análisis estratégico, planificación, liderazgo y resolución de problemas. Apasionada por la mentoría, combina conocimientos técnicos y habilidades interpersonales para fomentar innovación, sostenibilidad y crecimiento empresarial.",
+  },
+  {
     name: "Berioska Torres",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Berioska_Torres.jpg",
@@ -52,7 +66,7 @@ export const mentors: Mentor[] = [
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Paulina_Naranjo.jpeg",
     description:
-      "Profesional destacada en comunicación estratégica, branding y capacitación. Actualmente, es docente en ESPE Innovativa EP, donde diseña programas educativos sobre manejo de marca y pensamiento crítico. Ha sido Oficial de Comunicación en la Fundación Charles Darwin, liderando estrategias y proyectos de impacto ambiental. También capacita en pitch en la Cámara de Comercio de Quito y Latinnova, apoyando a emprendedores. Con una maestría en Comunicación Estratégica y habilidades digitales avanzadas, Paulina es un referente en el ámbito académico y empresarial.",
+      "Diseñadora gráfica e ingeniera en diseño gráfico con una maestría en comunicación estratégica, cuenta con más de 15 años de experiencia en comunicación y marketing digital. Ha trabajado como consultora y docente, destacándose en el diseño y ejecución de estrategias digitales para ONGs, empresas públicas y privadas. Su experiencia incluye roles como analista de comunicación en el Instituto Nacional de Biodiversidad, capacitadora y docente para emprendedores y profesionales en Latinnova, Cámara de Comercio de Quito y ESPE Innovativa. Especialista en diseño de contenido visual y estrategias de redes sociales, ha colaborado con organismos como WWF, la Fundación Charles Darwin y la Coalición Nacional de Mujeres.",
   },
   {
     name: "Ricardo Gonzalez",
@@ -66,7 +80,7 @@ export const mentors: Mentor[] = [
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Vanesa_Gallardo.jpg",
     description:
-      "Experta en gestión empresarial y desarrollo humano, Coach Profesional (ACC) y Gerente General de Strategia Humana. Co-Fundadora de Global You Coaching Academy, mentora en WeXchange BID LAB y conferencista internacional. Ha liderado iniciativas como Embajadoras del Cambio y es autora de Mujeres Inspirando Mujeres. Reconocida por el Congreso de EE. UU. y WEConnect International, es consultora para organizaciones como GIZ y CARE.",
+      "Experta en gestión empresarial y desarrollo humano. Master of Science in International Business Administration de MIU Miami University de EE.UU. Gerente General de Strategia Humana - Ecuador y CEO de Strategia Humana LLC - EE.UU. Directora de la Aceleradora de Negocios con IA. Mentora de WeXchange de BID Lab. Líder Comunitaria de Techstars. Ha liderado iniciativas como Embajadoras del Cambio y autora del libro Mujeres Inspirando Mujeres. Ha recibido reconocimiento de WEConnect International.",
   },
   {
     name: "William Villacis",
