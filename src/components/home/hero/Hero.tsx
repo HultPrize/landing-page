@@ -128,7 +128,7 @@ export default function Hero() {
         <iframe
           loading="lazy"
           className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
-          src="https://www.canva.com/design/DAGXuA922Ek/DyHDR961_d6Ilyv_ZB0jvQ/view?embed"
+          src="https://www.canva.com/design/DAGYgSu3TmI/SinibIA5rfLMc3b4dZRbTg/view?embed"
           allowFullScreen
           allow="fullscreen"
         ></iframe>
