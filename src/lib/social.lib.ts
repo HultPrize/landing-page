@@ -1,6 +1,6 @@
 import {
   Facebook,
-  Instagram,
+  // Instagram,
   // Linkedin,
   Music2,
   LucideIcon,
@@ -14,11 +14,11 @@ type SocialData = {
   icon: LucideIcon;
 };
 
-const instagramData: SocialData = {
-  name: "Instagram",
-  link: "https://www.instagram.com/oncampus_programepn",
-  icon: Instagram,
-};
+// const instagramData: SocialData = {
+//   name: "Instagram",
+//   link: "https://www.instagram.com/oncampus_programepn",
+//   icon: Instagram,
+// };
 
 const tiktokData: SocialData = {
   name: "TikTok",
@@ -34,7 +34,7 @@ const tiktokData: SocialData = {
 
 const facebookData: SocialData = {
   name: "Facebook",
-  link: "https://www.facebook.com/share/12DHLsS3Gsh/",
+  link: "https://www.facebook.com/oncampusprogramepn",
   icon: Facebook,
 };
 
@@ -54,7 +54,7 @@ export const socialData: SocialData[] = [
   // linkedinData,
   // twitterData,
   facebookData,
-  instagramData,
+  // instagramData,
   tiktokData,
   // youtubeData,
 ];
