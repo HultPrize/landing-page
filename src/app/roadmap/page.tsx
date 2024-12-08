@@ -44,7 +44,7 @@ const Phase: React.FC<PhaseProps> = ({
           </ul>
         )}
         {showButton && (
-          <Link href={"/howitworks"}>
+          <Link href={"/howitworks/phase1"}>
             <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-sm font-semibold rounded hover:bg-[#d40672] transition-colors">
               Más información
             </Button>

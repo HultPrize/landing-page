@@ -78,28 +78,24 @@ export default function Hero() {
         </Link> */}
         </div>
       </section>
-      <h2 className="mt-14 text-3xl font-bold text-center mb-6">
+      <h2 className="mt-14 text-3xl font-bold text-center mb-6 text-[#E5077F]">
         ¿Qué es Hult Prize?
       </h2>
-      <div
-        className="text-lg md:text-2xl text-black text-center max-w-2xl font-poppins"
-        style={{ fontFamily: "Poppins, sans-serif" }}
-      >
+      <div className="text-lg md:text-2xl text-black text-center max-w-2xl font-poppins px-4 md:px-0">
         <p>
-          {" "}
           El Hult Prize es la competencia internacional más grande de
           emprendimiento social, donde jóvenes de todo el mundo crean soluciones
           innovadoras para enfrentar los mayores retos globales. Este
           prestigioso desafío ha llegado a la Escuela Politécnica Nacional,
           ofreciendo a nuestros estudiantes la oportunidad de transformar sus
           ideas en proyectos que impacten positivamente en la sociedad. ¡Únete y
-          sé parte de esta revolución de cambio desde la Poli!{" "}
+          sé parte de esta revolución de cambio desde la Poli!
         </p>
       </div>
-      <h2 className="mt-14 text-3xl font-bold text-center mb-6">
+      <h2 className="mt-14 text-3xl font-bold text-center mb-6 text-[#E5077F]">
         Fases de la competencia en la EPN
       </h2>
-      <div className="flex flex-wrap justify-center mb-8">
+      <div className="flex flex-wrap justify-center mb-1">
         {phases.map((phase, index) => (
           <div
             key={index}
@@ -108,30 +104,32 @@ export default function Hero() {
             <img
               src={phase.image}
               alt={phase.title}
-              className="w-20 h-20 mx-auto"
+              className="w-16 h-16 sm:w-20 sm:h-20 mx-auto"
             />
-            <h3 className="text-lg font-bold text-[#E5077F] mt-2">
+            <h3 className="text-lg sm:text-2xl md:text-2xl font-bold text-[#E5077F] mt-2">
               {phase.title}
-            </h3>{" "}
-            {/* Magenta */}
-            <p className="mt-2 text-sm text-black">{phase.description}</p>{" "}
-            {/* Negro */}
+            </h3>
+            <p className="mt-2 text-sm sm:text-lg md:text-lg text-black">
+              {phase.description}
+            </p>
           </div>
         ))}
       </div>
-      <Link href={"/howitworks"}>
-        <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-sm font-semibold rounded hover:bg-[#d40672] transition-colors">
+      <Link href={"/howitworks/phase1"}>
+        <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-lg font-semibold rounded hover:bg-[#d40672] transition-colors">
           Más información
         </Button>
       </Link>
-      <div className="relative w-3/4 pt-[42.16%] pb-0 shadow-md mt-6 mb-4 overflow-hidden rounded-lg will-change-transform">
-        <iframe
-          loading="lazy"
-          className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
-          src="https://www.canva.com/design/DAGXuA922Ek/DyHDR961_d6Ilyv_ZB0jvQ/view?embed"
-          allowFullScreen
-          allow="fullscreen"
-        ></iframe>
+      <p className="mt-14 text-3xl font-bold text-center mb-6 text-[#E5077F]">
+        Mentorías
+      </p>
+      <div className="text-lg md:text-2xl text-black text-center max-w-2xl font-poppins px-4 md:px-0">
+        <p>
+          Las mentorías son sesiones de orientación clave para el desarrollo del
+          proyecto, brindadas por expertos en el tema. Durante las distintas
+          fases, se llevarán a cabo de forma presencial o virtual y es
+          obligatorio que al menos un miembro del equipo asista.
+        </p>
       </div>
       <Link href={"/mentors"}>
         <Button className="mt-4 px-4 py-2 bg-[#E5077F] text-white text-lg font-semibold rounded hover:bg-[#d40672] transition-colors">
