@@ -33,7 +33,7 @@ const MentorComponent: React.FC<MentorProps> = ({ mentor }) => {
             </p>
             <button
                 onClick={toggleDescription}
-                className="text-[#E5077F] mt-2"
+                className="text-pink-500 mt-2"
             >
                 {isExpanded ? "Leer menos" : "Leer más"}
             </button>
