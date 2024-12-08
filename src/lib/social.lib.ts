@@ -22,7 +22,7 @@ type SocialData = {
 
 const tiktokData: SocialData = {
   name: "TikTok",
-  link: "https://www.tiktok.com/@hult.prize.epn",
+  link: "https://www.tiktok.com/@hult.prize_epn",
   icon: Music2,
 };
 
