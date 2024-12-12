@@ -28,7 +28,7 @@ export default function Hero() {
     <>
       <section
         className="h-screen w-full px-8 md:px-16 relative
-      bg-[url('https://hult-prize.s3.us-east-1.amazonaws.com/cover.jpg')] bg-cover bg-center bg-no-repeat 
+      bg-[url('/cover.jpg')] bg-cover bg-center bg-no-repeat 
       flex flex-col justify-start items-center
       before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
       before:bg-gradient-to-b before:from-pink-700 before:to-transparent before:z-10"
