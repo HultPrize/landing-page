@@ -122,6 +122,15 @@ const Phase1 = () => {
               Selection Framework & Criteria
             </Button>
           </Link>
+          <Link
+            href={
+              "https://hultprizefoundation.notion.site/Pitch-Checklist-1295dd17a06b809b9253fd9ef8e075d8"
+            }
+          >
+            <Button className="px-4 mt-0 bg-[#E5077F] text-white rounded hover:bg-pink-700 transition-colors duration-300">
+              Recomendaciones para el Pitch - Video
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex space-x-4 mt-4">
