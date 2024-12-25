@@ -89,4 +89,32 @@ export const mentors: Mentor[] = [
     description:
       "Emprendedor serial apasionado por la construcción de proyectos, productos y LEGOS, enfocado en el desarrollo exponencial de personas y organizaciones. Cree que los problemas creativos son oportunidades para innovar. Actualmente, es Gerente de Innovación en La Mina, consultor externo en la Cámara de Comercio de Quito y Kruger Corp., CEO de RDS y Founder de Rapifuego.",
   },
+  {
+    name: "Francisco Román",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Francisco_Roman.jpeg",
+    description:
+      "Ingeniero comercial y trabajo como consultor corporativo enfocado en innovación tecnológica; actualmente curso una maestría en transformación digital e innovación ayudando a emprendedores para potencializar recursos tecnológicos y canales de competitividad.",
+  },
+  {
+    name: "Cesar Ron",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Cesar_Ron.jpeg",
+    description:
+      "Profesional y academico en los campos de Inteligencia Artificial (IA) y Ciencia de Datos (DS). PhD en simulacion computacional y Master en Inteligencia Artificial. Sus areas de expertise incluyen el ciclo de vida de soluciones de IA y DS, Machine Learning Operations, manejo de Big Data, y aplicaciones de IA con computacion cuantica. Actualmente es Cientificos de Datos Senior en Banco Pichincha y docente en importantes instituciones de educacion superior del pais.",
+  },
+  {
+    name: "María Morales",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Maria_Morales.jpeg",
+    description:
+      "Psicóloga Orgamizacional de la PUCE. Máster en Gestión y Dirección de personas. Mi experiencia es de más de 20 años en Consultoría de Recursos Humanos, headhunting, capacitación y desarrollo de personas. Mentora de mujeres en Lila Working Moms.",
+  },
+  {
+    name: "Sebastián Sarasti",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Sebastian_Sarasti.jpeg",
+    description:
+      "Sebastian es ingenierio en machine learning e inteligencia artificial. Ha desarrollado proyectos end-to-end en diferentes industrias y aplicaciones como en el sector bancario, aeropuertos, retail y pharma. En la actualidad Sebastian, se enfoca en la creacion y desarrollo de modelos de inteligencia artificial con deep learning. Especificamente, se enfoca en la creacion de modelos fundacionales y ajuste de estos.",
+  },
 ];
