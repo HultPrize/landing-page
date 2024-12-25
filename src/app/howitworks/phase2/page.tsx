@@ -20,6 +20,12 @@ const Phase2 = () => {
         alt={`Presentación 2023-2024`}
         className="w-full h-64 object-cover rounded-lg shadow-md"
       />
+      <div className="mt-8 text-center">
+        <h2 className="text-3xl font-bold text-[#E5077F]">
+          ¡La presentación es el 09 de Enero en el Auditorio 1, Piso 5, Edificio
+          26!
+        </h2>
+      </div>
       <div className="mt-8 self-start">
         <h2 className="text-2xl font-semibold text-[#E5077F] mb-4">
           Indicaciones Generales
@@ -56,7 +62,8 @@ const Phase2 = () => {
         <p className="text-lg text-gray-600 mt-4">
           Cada sesión está diseñada para impulsar tus habilidades, perfeccionar
           tu pitch y ayudarte a desarrollar un prototipo sólido que marque la
-          diferencia. Para esta fase se desarrollarán las mentorías de manera virtual.
+          diferencia. Para esta fase se desarrollarán las mentorías de manera
+          virtual.
         </p>
         <div className="mt-4">
           <h3 className="text-xl font-semibold text-gray-700">
@@ -71,9 +78,7 @@ const Phase2 = () => {
               </ul>
             </li>
             <li className="mt-4">
-              <strong>
-                Validación y Creación del Prototipo
-              </strong>
+              <strong>Validación y Creación del Prototipo</strong>
               <ul className="list-disc pl-6 mt-1">
                 <li>Jueves 02 de enero</li>
                 <li>Viernes 03 de enero</li>
