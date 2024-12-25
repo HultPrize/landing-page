@@ -119,7 +119,7 @@ const Phase1 = () => {
             }
           >
             <Button className="px-4 mt-0 bg-[#E5077F] text-white rounded hover:bg-pink-700 transition-colors duration-300">
-              Selection Framework & Criteria
+              Criterios de Selección
             </Button>
           </Link>
           <Link
@@ -128,7 +128,7 @@ const Phase1 = () => {
             }
           >
             <Button className="px-4 mt-0 bg-[#E5077F] text-white rounded hover:bg-pink-700 transition-colors duration-300">
-              Recomendaciones para el Pitch - Video
+              Recomendaciones para el Pitch
             </Button>
           </Link>
         </div>
