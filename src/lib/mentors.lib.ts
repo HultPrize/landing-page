@@ -117,4 +117,11 @@ export const mentors: Mentor[] = [
     description:
       "Sebastian es ingenierio en machine learning e inteligencia artificial. Ha desarrollado proyectos end-to-end en diferentes industrias y aplicaciones como en el sector bancario, aeropuertos, retail y pharma. En la actualidad Sebastian, se enfoca en la creacion y desarrollo de modelos de inteligencia artificial con deep learning. Especificamente, se enfoca en la creacion de modelos fundacionales y ajuste de estos.",
   },
+  {
+    name: "Eduardo Arévalo Torrellas",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/mentors/Eduardo_Arevalo.jpeg",
+    description:
+      "Co-fundador y CEO de Quantaroot una empresa que busca ser líder transformando el mundo empresarial democratizando el acceso a los datos. Gracias a la IA y la inteligencia de negocios, ayudan a las empresas a mejorar su toma de decisiones, incrementar su eficiencia y reducir los tiempos ociosos.",
+  },
 ];
