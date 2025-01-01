@@ -80,8 +80,8 @@ const Phase2 = () => {
             <li className="mt-4">
               <strong>Validación y Creación del Prototipo</strong>
               <ul className="list-disc pl-6 mt-1">
-                <li>Jueves 02 de enero</li>
-                <li>Viernes 03 de enero</li>
+                <li>Viernes 03 de enero: 08:00 PM</li>
+                <li>Lunes 06 de enero: 08:00 PM</li>
               </ul>
             </li>
           </ul>
