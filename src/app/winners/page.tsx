@@ -2,8 +2,68 @@ import Image from 'next/image';
 
 const Winners = () => {
   return (
+    
     <div className="bg-white h-full flex flex-col items-center pt-20">
+      <h2 className="mt-14 text-3xl font-bold text-center mb-6 text-[#E5077F]">
+        Finalistas Hult Prize EPN 2024-2025
+      </h2>
+      <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center mb-8 transition-transform duration-500 ease-in-out transform hover:scale-105">
+        <div className="md:w-1/2 md:pr-8">
+          <h2 className="text-4xl font-bold mb-4">Molution</h2>
+          <p className="mb-6 text-lg">
+            Molution es una plataforma de diseño molecular asistida por inteligencia artificial que busca revolucionar el desarrollo de medicamentos contra el cáncer. Su misión es analizar y crear moléculas específicas con el potencial de convertirse en tratamientos efectivos.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <Image
+            className="w-full h-auto"
+            height={300}
+            width={300}
+            src="https://hult-prize.s3.us-east-1.amazonaws.com/winners/finalists/molution-011-2025.jpeg"
+            alt="Molution"
+          />
+        </div>
+      </div>
 
+      <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out transform hover:scale-105">
+        <div className="md:w-1/2">
+          <Image
+            className="w-full h-auto"
+            height={300}
+            width={300}
+            src="https://hult-prize.s3.us-east-1.amazonaws.com/winners/finalists/ecomida-018-2025.jpeg"
+            alt="ECOmida"
+          />
+        </div>
+        <div className="md:w-1/2 md:pl-8">
+          <h2 className="text-4xl font-bold mb-4">ECOmida</h2>
+          <p className="mb-6 text-lg">
+            ECOmida es una empresa dedicada a transformar residuos orgánicos en productos de alta calidad, mediante la bioconversión de la mosca soldado-negra y la acuaponía, en un sistema circular y sostenible para obtener alimentos orgánicos para personas, animales de granja y fertilizantes naturales.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center mb-8 transition-transform duration-500 ease-in-out transform hover:scale-105">
+        <div className="md:w-1/2 md:pr-8">
+          <h2 className="text-4xl font-bold mb-4">SOSUS</h2>
+          <p className="mb-6 text-lg">
+            SOSUS es un proyecto innovador que busca combatir los efectos de las sequías hidrológicas y el estrés ambiental en cultivos clave mediante tecnología de bobinado electromagnético de baja frecuencia alimentada por energía solar.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <Image
+            className="w-full h-auto"
+            height={300}
+            width={300}
+            src="https://hult-prize.s3.us-east-1.amazonaws.com/winners/finalists/sosus-033-2025.jpg"
+            alt="SOSUS"
+          />
+        </div>
+      </div>
+
+      <h2 className="mt-14 text-3xl font-bold text-center mb-6 text-[#E5077F]">
+        Concursantes Ecuatorianos
+      </h2>
       <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center mb-8 transition-transform duration-500 ease-in-out transform hover:scale-105">
         <div className="md:w-1/2 md:pr-8">
           <h2 className="text-4xl font-bold mb-4">Gelwear</h2>
