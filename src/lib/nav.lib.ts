@@ -12,7 +12,7 @@ export const navItems = [
     link: "/winners",
   },
   {
-    name: "Mentores",
+    name: "Especialistas",
     link: "/mentors",
   },
 ];
