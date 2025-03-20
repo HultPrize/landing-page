@@ -6,6 +6,20 @@ export interface Judge {
 
 export const judges: Judge[] = [
   {
+    name: "Tania Pazmiño",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/judges/Tania_Pazmino.jpeg",
+    description:
+      "Profesional con un MBA y Especialización en Creación de Empresas enfocada en la pyme, docente en la Escuela Politécnica Nacional, coordinadora del Club de Emprendimiento Innovador, con amplia experiencia en gestión, finanzas, procesos y emprendimiento. Además, es consultora certificada en el Creativity Certification Program y ha trabajado como asesora y consultora para emprendimientos y mipymes, participando también en eventos concursables de emprendimiento.",
+  },
+  {
+    name: "Estefanía Yánez",
+    imageSrc:
+      "https://hult-prize.s3.us-east-1.amazonaws.com/judges/Estefania_Yanez.jpeg",
+    description:
+      "Formada en Administración de Empresas y Gerente General de WorkingUp, con amplia experiencia en el diseño y operación de programas enfocados en emprendimiento e innovación. Ha sido capacitadora y mentora en varios programas de emprendimiento con enfoque de género y movilidad humana, coordinando iniciativas como WISE Women in Stem Entrepreneurship de la USFQ, Sin Fronteras de Fundación CRISFÉ, Proyecto Semilla de Childfund International, y Compra con Propósito, una iniciativa de las Agencias de Naciones Unidas en el país.",
+  },
+  {
     name: "Eduardo Arévalo Torrellas",
     imageSrc:
       "https://hult-prize.s3.us-east-1.amazonaws.com/judges/Eduardo_Arevalo.jpeg",
